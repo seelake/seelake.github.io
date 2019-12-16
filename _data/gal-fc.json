@@ -1,0 +1,26 @@
+[
+	{
+		"id":1,
+		"caption": "",
+		"caption-class": "meta hidden",
+		"lang":"en"
+	},
+	{
+		"id":2,
+		"caption": "Includes a 1.5 m connection cable",
+		"caption-class": "meta",
+		"lang":"en"
+	},
+	{
+		"id":3,
+		"caption": "Perfect for adding up to 4 foot switches to AudioStation MiNi",
+		"caption-class": "meta",
+		"lang":"en"
+	},
+	{
+		"id":4,
+		"caption": "Perfect for adding up to 4 foot swithches to AudioStation X64",
+		"caption-class": "meta",
+		"lang":"en"
+	}
+]

@@ -1,0 +1,31 @@
+--- 
+layout: fc 
+title: Foot Controller Media  
+section: media 
+---
+{% include _set_lang.html %}
+
+
+<section>
+
+<div class="container">
+
+  <div class="row">
+      <h2>Foot Controller hi-res pictures</h2>
+  </div>
+
+
+  <div class="row">
+    {% for image in site.static_files %}
+      {% if image.path contains "images/media/thumb/media_fc_" %}
+        <a href="{{ site.baseurl }}{{ image.path | replace: "thumb", "large" }}" target="_blank">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" width="280" height="118" />
+        </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+</div>
+
+</section>
+
+

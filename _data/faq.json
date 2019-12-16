@@ -1,0 +1,67 @@
+[
+    {
+        "question": "Which is AudioStation' operative system? In which way it is specific for real-time digital audio?",
+        "answer": "It is an &quot;embedded&quot; operative system, purposely built to optimize processing of real-time audio signals. It is built around the kernel (the heart) of Microsoft Windows, thus compatible with any 64-bit plugin and music software written for Windows 7 and later. With the integration of a 32-bit to 64-bit bridge, 32-bit plugins can be also used, including older versions running on Windows XP.",
+        "lang": "en"
+    },
+    {
+        "question": "Which hard disks or memory mass could I mount in?",
+        "answer": "AudioStation uses both traditional rotating hard disks and new Solid State Disk memory units, also known as SSD, that, beside a lower data access time, even grant a better resistance to shocks and environmental stresses (mechanical, thermal, etc.). SSD units are optionally available, upon request.                <br> AudioStation can mount a second hard disk, that can be used as backup unit of the main hard disk.",
+        "lang": "en"
+    },
+    {
+        "question": "Which are compatible VST/VSTi?",
+        "answer": "AudioStation is compatible with any 64-bit plugin and music software written for Windows 7. With the integration of a 32-bit to 64-bit bridge, 32-bit plugins can be also used, including older versions running on Windows XP.",
+        "lang": "en"
+    },
+    {
+        "question": "How do I install plugins?",
+        "answer": "According the normal installation procedures expected from developers. You don't need an external installer, a computer to manage the installation nor to use special AudioStation-flavoured plugin versions. For the plugin that need it, you simply start the installation procedure; for the plugins that don't require installation, you simply copy files in a specific folder.",
+        "lang": "en"
+    },
+    {
+        "question": "Does AudioStation support copy protection systems?",
+        "answer": "Yes, it supports any protection type against illegal copy: iLok, eLicenser (formerly SyncroSoft), Challenge-Response and Serial Number.",
+        "lang": "en"
+    },
+    {
+        "question": "Could I connect two external monitor? TouchScreen too?",
+        "answer": "Yes, AudioStation features 3 video outputs: VGA (analog), DVI (digital) and HDMI (digital), where you can connect one or two monitor, also touchscreen.\t\t<br>A monitor is useful to install plugins and to manage setups. In live, monitor keyboard and mouse are not necessary and the device can be controlled with <a href='as-livecontrol.html'>LiveControl</a> (the dedicated remote controller supplied with the device) and/or with master keyboard, foot controllers and other MIDI controllers.",
+        "lang": "en"
+    },
+    {
+        "question": "Could I connect third-party MIDI controllers?",
+        "answer": "Yes, AudioStation's MIDI routing and processing engine and the versatile integrated MIDI patchbay, independent for each channel of the console, allows any process on MIDI input and output data. Any automated parameter of the plugins can be assigned to external MIDI controller.",
+        "lang": "en"
+    },
+    {
+        "question": "In what is different AudioStation from other hardware VST host?",
+        "answer": "AudioStation is not just a device where you could run two or three plugins at the same time, or some type and specialized version only.              <br> AudioStation is compatible with any VST/VSTi standard plugin and its protection systems and it can be installed with normal installation procedures expected from its developer.                <br> AudioStation's heart is a 20-channels digital mixer, plus 4 auxiliary stereo channels and 1 master channel. Each channel has 4 VST/VSTi slots for a total of 76 plugins both VST and VSTi that can be simultaneously loaded; moreover every channel feature a dedicated MIDI patch bay with a powerful MIDI data processing and routing engine.                <br> The mixing console also integrates a 24-tracks player with submixer for the playback of WAV and MP3 audio files, an audio/MIDI click generator (metronome) and even more.",
+        "lang": "en"
+    },
+    {
+        "question": "How does AudioStation manages audio mixing?",
+        "answer": "The <a href='as-digitalmixer.html'>Digital Mixer</a> page explains in detail AudioStation's digital audio mixing features (and many other possibilities).",
+        "lang": "en"
+    },
+    {
+        "question": "I need to build complex MIDI patches (with split, layer, merge, etc.): is it possible? How does AudioStation handles MIDI routing?",
+        "answer": "AudioStation's features of MIDI routing, processing and editing are shown in in the <a href='as-midipatchbay.html'>MIDI patchbay</a> page.",
+        "lang": "en"
+    },
+    {
+        "question": "Could I use AudioStation's outputs to create custom monitoring (i.e.: in-ear monitor) and at the same time send the master to the FOH?",
+        "answer": "Yes, each monitoring can have its own independent levels, including metronome: for details please have a look at <a href='as-digitalmixer.html'>Digital Mixer</a> page.",
+        "lang": "en"
+    },
+    {
+        "question": "Should I necessarily use AudioStation with monitor, mouse and keyboard connected?",
+        "answer": "Live you can comfortably control AudioStation with LiveControl, the included remote controller. Mouse, keyboard and monitor make it easy to program setups.",
+        "lang": "en"
+    },
+    {
+        "question": "Could I use AudioStation live with a software like Guitar Rig?",
+        "answer": "Yes, you can connect a foot controller to and any other external MIDI controller to adjust in real time every automated parameter.",
+        "lang": "en"
+    }
+]

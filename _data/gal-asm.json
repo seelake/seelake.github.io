@@ -1,0 +1,86 @@
+[
+	{
+		"id":1,
+		"caption": "",
+		"caption-class": "meta hidden",
+		"lang":"en"
+	},
+	{
+		"id":2,
+		"caption": "1U rack-mountable  aluminum enclosure",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":3,
+		"caption": "Equipped with Audio and MIDI system",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":4,
+		"caption": "Choose between 5 audio I/O configurations",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":5,
+		"caption": "1U rack-mounting  adapters included",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":6,
+		"caption": "High-efficency hybrid cooling system to play in any condition",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":7,
+		"caption": "It can be set up with display, keyboard and mouse, or via Wi-Fi with an iPad",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":8,
+		"caption": "LiveControl allows remote  control on the stage",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":9,
+		"caption": "On the stage it can also be controlled via Wi-Fi with an iPad",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":10,
+		"caption": "You can also play with  iPad/iPhone via MIDI over Wi-Fi network",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":11,
+		"caption": "Foot Controller accessory to connect up to 4 footswitches",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":12,
+		"caption": "AudioStation' powerful VST host/mixer",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":13,
+		"caption": "Running the AudioStation VST host    /    Running a DAW software",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	},
+	{
+		"id":14,
+		"caption": "Powered with Jack Audio Connection Kit to run multiple applications",
+		"caption-class": "meta text-center",
+		"lang":"en"
+	}
+]

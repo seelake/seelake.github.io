@@ -1,0 +1,98 @@
+---
+
+layout: default
+title: Videos
+menu: media
+---
+
+    <div class="container">
+      <div class="row" id="youtube_channel">
+           <h2>Videos</h2>
+      </div>
+    </div>
+
+<script>
+  (function($) {
+    $(document).ready(function () {
+
+      var seelake_videos_url = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyA2zhSTowqX7cd7vaFsqyQdxhm1Ndk2a48&type=video&channelId=UCdSjyVihr1egb64BLKCWNdw&part=snippet,id&order=date&maxResults=30';
+      var seelake_playlists_url = 'https://www.googleapis.com/youtube/v3/playlists?key=AIzaSyA2zhSTowqX7cd7vaFsqyQdxhm1Ndk2a48&channelId=UCdSjyVihr1egb64BLKCWNdw&part=id&order=date&maxResults=30';
+      var seelake_playlist_items_url = 'https://www.googleapis.com/youtube/v3/playlistItems?key=AIzaSyA2zhSTowqX7cd7vaFsqyQdxhm1Ndk2a48&playlistId=[playlistId]&part=snippet,id&order=date&maxResults=30';
+
+      var seelake_playlist_embedding_items_url = 'https://www.googleapis.com/youtube/v3/playlistItems?key=AIzaSyA2zhSTowqX7cd7vaFsqyQdxhm1Ndk2a48&playlistId=PLqLLkYBSIc6Z5PVBnZNm0IeRu6NV3eu3m&part=snippet,id&order=date&maxResults=30'
+
+      var sel = $('#youtube_channel');
+      var card = '<div class="col-md-4"> \
+      <div class="thumbnail" style="border:0; min-height: 250px;"> \
+        <a href="http://www.youtube.com/watch?v=[VIDEOID]" target="_blank"> \
+          <img src="[THUMBURL]" alt="[TITLE]" class="img-responsive" style="margin-bottom:0;"> \
+            <h4 class="text-center">[TITLE]</h4> \
+        </a> \
+      </div> \
+    </div>';
+
+      var curr_card = '';
+      var curr_item;
+      var curr_playlist;
+      var curr_seelake_playlist_items_url;
+
+      // // get videos
+      // jQuery.get(seelake_videos_url,
+      //   function( data, textStatus, xhr ) {
+   
+      //     for (var i=0; i<data.items.length; i++) {
+      //       curr_item = data.items[i];
+            
+      //       curr_card = card.replace("[VIDEOID]", curr_item.id.videoId)
+      //         .replace("[THUMBURL]", curr_item.snippet.thumbnails.medium.url)
+      //         .replace(/\[TITLE\]/g, curr_item.snippet.title)
+      //         .replace("[DESC]", curr_item.snippet.description)
+      //       ;
+      //       sel.append(curr_card);
+            
+      //     }
+      // });
+
+      // loop through all available playlists and get playlist items
+      // jQuery.get(seelake_playlists_url,
+      //   function( data, textStatus, xhr ) {
+      //     var curr_playlist;
+      //     for (var i=0; i<data.items.length; i++) {
+      //       curr_playlist = data.items[i];
+
+      //       curr_seelake_playlist_items_url = seelake_playlist_items_url.replace("[playlistId]", curr_playlist.id);
+      //       jQuery.get(curr_seelake_playlist_items_url, 
+      //         function(vids, textStatus, xhr) {
+              
+      //         for(var vid=0; vid<vids.items.length; vid++) {
+      //           curr_item = vids.items[vid];
+                   
+      //           curr_card = card.replace("[VIDEOID]", curr_item.snippet.resourceId.videoId)
+      //             .replace("[THUMBURL]", curr_item.snippet.thumbnails.medium.url)
+      //             .replace(/\[TITLE\]/g, curr_item.snippet.title)
+      //             .replace("[DESC]", curr_item.snippet.description)
+      //           ;
+      //           sel.append(curr_card);
+      //         }
+      //       });
+            
+      //     }
+      // });
+      
+      jQuery.get(seelake_playlist_embedding_items_url, 
+        function(vids, textStatus, xhr) {
+        
+        for(var vid=0; vid<vids.items.length; vid++) {
+          curr_item = vids.items[vid];
+             
+          curr_card = card.replace("[VIDEOID]", curr_item.snippet.resourceId.videoId)
+            .replace("[THUMBURL]", curr_item.snippet.thumbnails.medium.url)
+            .replace(/\[TITLE\]/g, curr_item.snippet.title)
+            .replace("[DESC]", curr_item.snippet.description)
+          ;
+          sel.append(curr_card);
+        }
+      });
+    });
+  })(jQuery)
+</script>

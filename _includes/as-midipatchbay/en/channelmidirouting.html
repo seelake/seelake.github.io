@@ -1,0 +1,137 @@
+<div class="container">
+    <div class="row row-no-bottom">
+    <h2>Channel MIDI Routing</h2>
+      <div class="col-md-6">
+          <p>The Channel MIDI Routing allows you to process MIDI data in input and output for any channel of the mixing console, to create specific mappings, splits and keyboard layers, to set dynamic response and transposition and to recall sounds and volume values: this way the musician can maintain control of software instruments and effects activated in the mixing console, as well as external MIDI instruments and effects that he or she will use, either alone or together with the software ones.
+              <br> Each mixer channel, thus each musician, has an independent Channel MIDI Routing system of its own, whose settings are saved and recalled along with the patches of that channel.</p>
+          <p> Hence each channel in the console and every patch, besides loading its own instruments and sounds, benefits from settings of key mappings, split points, layers, transpositions, dynamic curves, specific for every instrument and for every program.</p>
+          <p> These features, combined with those from Global MIDI Routing, allow you to design setups specific for every situation, and for every musician.</p>
+      </div>
+      <div class="col-md-6">
+          <a href="../images/zoom/mdptch_channelmidirouting_zoom.jpeg" data-rel="lightcase">
+              <img src="../images/mdptch_channelmidirouting.png" alt="Channel MIDI routing" width="445" height="485" class="center-block img-responsive">
+          </a>
+      </div>
+      <div class="col-sm-12">
+        <p> Never before has there been a MIDI data routing and processing system so advanced, versatile, powerful and at the same time musical, intuitive and user-friendly, even for those who do not have in-depth technical knowledge.</p>
+      </div>
+    </div>
+    <div class="row">
+        <h3>Five MIDI routing</h3>
+        <p>For maximum flexibility, MIDI data incoming from inputs assigned to mixer channels can be sent to 5 independent routing paths, processed with powerful MIDI engines and then freely routed to plugins and/or to external MIDI devices.
+            <br> Each routing features 5 different MIDI processors: Filter, Lower Key and Upper Key, Velocity, Transpose and Channel (see descriptions below). MIDI data from routings can be sent to up to 5 different destinations: To Ins 1, 2, 3, 4 and To Out. Destinations To Ins 1-4 route MIDI data to software instruments activated in VST inserts of the channel; while To Out routes data to hardware devices connected to MIDI outputs assigned to the channel of the console.
+            <br> This particular architecture lets you easily create and manage many situations, for instance:</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <ul>
+              <li> Playing 2 layered instruments: Routing 1 simply routes MIDI data to VST Inserts where both instruments are activated (in the example, VST Inserts 1 and 2)
+                  <a href="../images/zoom/mdptch_esempioa_zoom.jpeg" data-rel="lightcase">
+                      <img src="../images/mdptch_esempioa.png" width="448" height="110" class="img-responsive img-spaced"></a>
+              </li>
+              <li> Playing 2 layered instruments, one of them playing one octave up: in this case Routing 1 and Routing 2 are enabled, and are applied to each instrument separately: the transposed instrument gets a transposition of +12 semitones (controlled by layer #2)
+                  <a href="../images/zoom/mdptch_esempiob_zoom.jpeg" data-rel="lightcase">
+                      <img src="../images/mdptch_esempiob.png" width="448" height="193" class="img-responsive img-spaced" alt="Two layered instruments">
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-md-6 no-gutter">
+          <ul>
+              <li> Playing 2 instruments with 2 splits: in this case Routing 1 and 2 are enabled, and are applied to each instrument separately, and then upper and lower key bounds are set.
+                  <a href="../images/zoom/mdptch_esempioc_zoom.jpeg" data-rel="lightcase">
+                      <img src="../images/mdptch_esempioc.png" width="448" height="193" class="img-responsive img-spaced"></a>
+              </li>
+              <li> Playing an external MIDI instrument: can be achieved by enabling one Routing, adjust MIDI processors as needed for any setting for split, velocity, transpose and MIDI channel, and choosing &ldquo;To Out&rdquo; as destination (the physical MIDI outs assigned to the console channel)
+                  <a href="../images/zoom/mdptch_esempiod_zoom.jpeg" data-rel="lightcase">
+                      <img src="../images/mdptch_esempiod.png" width="448" height="110" class="img-responsive img-spaced"></a>
+              </li>
+          </ul>
+      </div>
+    <!-- </div> row -->
+    <div class="col-sm-12">
+        <p>When every available routing is activated, each channel of the console can use up to 5 different keyboard zones and/or use up to 5 layered programs. In addition, as described in the <a href="as-vstplayer.html#superpatches">VST Player</a> and <a href="as-digitalmixer.html#patcheperformance">Digital Mixer</a> pages, more mixer channels can be used together to create &ldquo;Super Patches&rdquo; with up to 40 instruments and up to 76 plugins of instruments and effects together.
+            <br>
+        </p>
+    </div>
+    <div class="col-sm-12">
+        <h3> Filter</h3>
+        <p>This is a powerful MIDI filter that can be adjusted to exclude any kind of MIDI data.
+            <br> This important processor can be used to achieve many purposes: for instance, using the aforementioned 2-instruments setup, if you need the pitch bend wheel to only drive one of the two instruments, you simply filter the pitch bend MIDI messages in the routing of the other instrument. The same thing can be done with sustain pedal, modulation wheel, aftertouch, and others.</p>
+        <p> This filter is extremely useful in many other circumstances as well, even very complex ones, like for example if you use 2 master keyboards to play 2 instruments activated in the same channel of the console. In this case, you set each master keyboard to a different MIDI channel, and then simply filter out for each instrument the master keyboard MIDI data that plays the other instrument.
+            <br> This setting can also be helpful when using AudioStation as a multitimbral sound generator in a studio setting, where instruments are played by the MIDI tracks of a sequencer.
+            <br>
+        </p>
+    </div>
+    <div class="col-sm-12">
+        <h3>Lower Key and Upper Key </h3>
+        <p>Routing can set the lower-upper key ranges which instruments respond to.
+            <br> The range internal to the limits can also be excluded, and used to control other instruments. Range selection is made easy by dragging the mouse on the virtual keyboard, or by activating the Learn function and simply pressing the desired range boundary keys.</p>
+    </div>
+    <div class="col-md-6">
+    <h3>Velocity </h3>
+        <p>The correct velocity is essential to achieve the best sound with any instrument, including the software ones.</p>
+        <p> For example, to properly control an acoustic piano timbre you absolutely need a master keyboard with an adequate adjustment of the keys&rsquo; dynamic response.</p>
+        <p> A master keyboard with adjustable velocity is needed in any case to set a fixed velocity, for example to play the sounds of some synthesizers or electromechanical organs.</p>
+        <p> Regrettably, most master keyboards on the market today don&rsquo;t feature adjustable velocity; thus, in many situations, they don&rsquo;t allow for an adequate sound performance.</p>
+        <p> That&rsquo;s why AudioStation comes with a powerful velocity management system, that can be used with any master keyboard and can target any instrument and any program; it not only supplies the controls lacking in master keyboards, it greatly expands control options.</p>
+    </div>
+    <div class="col-md-6">
+        <h3 class="hidden-sm hidden-xs">&nbsp;</h3>
+        <img src="../images/mdptch_velocity.png" width="350" height="342" class=" center-block img-responsive">
+    </div>
+    <div class="col-sm-12 no-gutter">
+        <p>Each routing features its own velocity processor with many settings, to get the right dynamic response for every situation and the maximum flexibility.</p>
+        <p> There are 12 different curves with different types of response: non linear, linear, reverse linear, logarithmic, exponential and constant. These can of course be edited to adapt to everyone&rsquo;s needs, and new ones can be created.
+            <br> Beside dynamic curves, that set the ratio between the velocity received from the keyboard and the velocity sent to the instrument, there are some other useful control parameters:</p>
+    </div>
+    <p class="img-spaced">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="col-xs-12 col-md-6">
+        <img src="../images/mdptch_offset.png" class="img-responsive center-block pull-left">
+        <h4 class="no-top-margin">Offset</h4>
+        <p>Defines a minimum velocity value, to be transmitted even when the keyboard outputs a lower value.</p>
+    </div>
+    <div class="col-xs-12 col-md-6 no-gutter">
+        <img src="../images/mdptch_upperlimit.png" class="img-responsive center-block pull-left">
+        <h4 class="no-top-margin">Upper Limit</h4>
+        <p>Upper Limit to set the maximum velocity level sent to the instrument.
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <img src="../images/mdptch_lowerhold-off.png"  class="img-responsive center-block pull-left">
+        <h4 class="no-top-margin">Lower Hold-Off</h4>
+        <p>Lower Hold-Off assigns the minimum velocity level that notes must have to be trasmitted.</p>
+    </div>
+    <div class="col-xs-12 col-md-6 no-gutter">
+        <img src="../images/mdptch_upperhold-off.png" class="img-responsive center-block pull-left">
+        <h4 class="no-top-margin">Upper Hold-Off</h4>
+        <p>Upper Hold-Off sets the maximum velocity level that notes must have to be transmitted.</p>
+    </div>
+    <div class="col-sm-12">
+        <p>Proper settings of these parameters can result in some creative dynamic effects, like Velocity Switch (when a key is pressed lightly it plays one instrument, when it pressed more strongly it plays another) and Velocity Crossfade (a crossfade progression from one instrument to another depending on the pressure on the keyboard).
+            <br>
+        </p>
+        <h3>Transpose </h3>
+        <p>This setting transposes notes that transit through the routing. Transposition range is +/- 4 octaves, with 1 semitone interval. Transpose can also be used in some creative ways: two notes can play with an interval of a fifth for each key pressed. To get this, Routing 1 and 2 are activated and both assigned to the same instrument, then Routing 2 is set to +7 semitones.
+            <br>
+        </p>
+        <h3> MIDI channel</h3>
+        <p>This controls the MIDI channel with the data being sent to the instruments. Its main use is with polytimbral instruments, that play more sounds simultaneously, each one receiving on a MIDI channel of its own.
+            <br> This function in AudioStation allows you to control two different programs simultaneously even with master keyboards which aren&rsquo;t able to transmit on 2 different MIDI channels at the same time. To do this, simply enable 2 routings, set them on different MIDI channels, and address them to the same polytimbral instrument. Of course, keyboard mappings and split points can be programmed as well.</p>
+        <div class="col-md-6">
+        <h3>Send Data   </h3>
+            <p>In addition to the routing and processing system, the Send Data section allows you to send specific MIDI message to more MIDI outputs, to automatically recall (in addition to the software instruments and effects) the presets and levels for external synthesizers and MIDI effects, and/or to maintain synchronization of sequencers, drum machines and other hardware devices.</p>
+        </div>
+        <div class="col-md-6">
+        <h3 class="hidden-sm hidden-xs">&nbsp;</h3>
+            <a href="../images/zoom/mdptch_senddata_zoom.jpeg" data-rel="lightcase">
+                <img src="../images/mdptch_senddata.png" width="445" height="94" class="center-block img-responsive">
+            </a>
+        </div>
+        <div class="col-sm-12">
+            <p>With this section you may send and receive System Exclusive MIDI data (SysEx), for instance to save and restore at the appropriate time soundbanks of external MIDI synthesizers or to set their specific parameters.</p>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% include _set_lang.html %}
+
+
+<div class="flexslider">
+  <ul class="slides">
+{% for slide in site.data.gal-asx %}
+  {% if slide.lang == lang %}
+    {% assign sid = slide.id | prepend: "00000" | slice: -5,5 %}
+    <li data-slide-number="{{ slide.id }}">
+      <div class="{{ slide.caption-class }}">{{ slide.caption }}</div>
+      <img  srcset="{{ site.baseurl }}/bullets/asx/small/gax{{ sid }}.jpg 768w,
+                    {{ site.baseurl }}/bullets/asx/medium/gax{{ sid }}.jpg 992w,
+                    {{ site.baseurl }}/bullets/asx/large/gax{{ sid }}.jpg 1200w,
+                    {{ site.baseurl }}/bullets/asx/gax{{ sid }}.jpg 2545w"
+            sizes="100vw"
+            src="{{ site.baseurl }}/bullets/asx/gax{{ sid }}.jpg" 
+            class="img-responsive">
+    </li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+
+      <a name="top" id="top" ></a>
+
+<nav class="navbar navbar-default navbar-noborder" id="capitoli">
+  <div class="container" >
+
+    <ul id="caps-capitoli" class="nav navbar-nav small">
+     <li role="presentation" id="cap-overview" class="{% if page.section == "overview" %} active {% endif %}" > <a href="./as-overview.html#top">Overview</a></li>
+     <li role="presentation" id="cap-vstplayer" class="{% if page.section == "vstplayer" %} active {% endif %}" > <a href="./as-vstplayer.html#top">VST Player</a></li>
+     <li role="presentation" id="cap-digitalmixer" class="{% if page.section == "digitalmixer" %} active {% endif %}" > <a href="./as-digitalmixer.html#top" >Mixer</a></li>
+     <li role="presentation" id="cap-midipatchbay" class="{% if page.section == "midipatchbay" %} active {% endif %}" > <a href="./as-midipatchbay.html#top">MIDI Patchbay</a></li>
+     <li role="presentation" id="cap-audioplayer" class="{% if page.section == "audioplayer" %} active {% endif %}" > <a href="./as-audioplayer.html#top">Audio Player</a></li>
+     <li role="presentation" id="cap-livecontrol" class="{% if page.section == "livecontrol" %} active {% endif %}" > <a href="./as-livecontrol.html#top">Remote</a></li>
+     <li role="presentation" id="cap-ipad" class="{% if page.section == "ipad" %} active {% endif %}" > <a href="./as-ipad.html#top">iPad</a></li>
+     <li role="presentation" id="cap-vstplugins" class="{% if page.section == "vstplugins" %} active {% endif %}" > <a href="./as-vstplugins.html#top">Plug-ins</a></li>
+     <li role="presentation" id="cap-daw" class="{% if page.section == "daw" %} active {% endif %}" > <a href="./as-daw.html#top">DAW</a></li>
+     <li role="presentation" id="cap-jack" class="{% if page.section == "jack" %} active {% endif %}" > <a href="./as-jack.html#top">Jack Audio</a></li>
+     <li role="presentation" id="cap-specifications" class="{% if page.section == "specifications" %} active {% endif %}" > <a href="./as-specifications.html#top">Specs</a></li>
+     <li role="presentation" id="cap-media" class="{% if page.section == "media" %} active {% endif %}" > <a href="./as-media.html#top">Media</a></li>
+     <li class="cap-buy"><a href="./configurator.html">BUY</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="topping">&nbsp;</div>
+
+
+{{ content }}

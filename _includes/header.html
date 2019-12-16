@@ -1,0 +1,78 @@
+<!-- Header Start -->
+<nav role="navigation" class="navbar navbar-default" id="mainnav">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="161" height="22" id="logo-seelake" onclick="window.location='/'; return false;">
+          <param name="movie" value="{{ site.baseurl }}/bullets/logo-seelake.swf" />
+          <param name="quality" value="high" />
+          <param name="bgcolor" value="#ffffff" />
+          <param name="play" value="true" />
+          <param name="loop" value="true" />
+          <param name="wmode" value="transparent" />
+          <param name="scale" value="showall" />
+          <param name="menu" value="true" />
+          <param name="devicefont" value="false" />
+          <param name="salign" value="" />
+          <param name="allowScriptAccess" value="sameDomain" />
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="{{ site.baseurl }}/bullets/logo-seelake.swf" width="161" height="22">
+            <param name="movie" value="{{ site.baseurl }}/bullets/logo-seelake.swf" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="#ffffff" />
+            <param name="play" value="true" />
+            <param name="loop" value="true" />
+            <param name="wmode" value="transparent" />
+            <param name="scale" value="showall" />
+            <param name="menu" value="true" />
+            <param name="devicefont" value="false" />
+            <param name="salign" value="" />
+            <param name="allowScriptAccess" value="sameDomain" />
+          <!--<![endif]-->
+             <a href="/"><img src="{{ site.baseurl }}/bullets/ico-logo.png" alt="" width="161" height="22"></a>
+          <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+        </object>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li class="active"> -->
+        <li>
+          <a href="{{ site.baseurl }}/{{ lang }}/news.html" id="news">NEWS <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" id="products" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ site.baseurl }}/{{ lang }}/allproducts.html">All Products</a></li>
+            <li><a href="{{ site.baseurl }}/{{ lang }}/am-overview.html">AudioStation Mini</a></li>
+            <li><a href="{{ site.baseurl }}/{{ lang }}/as-overview.html">AudioStation X64</a></li>
+            <li><a href="{{ site.baseurl }}/{{ lang }}/fc-overview.html">Foot Controller</a></li>
+            <!-- <li role="separator" class="divider"></li> -->
+          </ul>
+        </li>
+        <li><a href="{{ site.baseurl }}/{{ lang }}/videos.html" id="media">VIDEOS</a></li>
+        <li><a href="{{ site.baseurl }}/{{ lang }}/configurator.html" id="buy">BUY</a></li>
+        <li><a href="{{ site.baseurl }}/{{ lang }}/support.html" id="support">SUPPORT</a></li>
+        <li><a href="{{ site.baseurl }}/{{ lang }}/artists.html" id="artists">ARTISTS</a></li>
+        <li><a href="{{ site.baseurl }}/{{ lang }}/contacts.html" id="contacts">CONTACTS</a></li>
+      </ul>
+      <!-- form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

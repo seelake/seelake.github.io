@@ -1,0 +1,44 @@
+---
+layout: default
+---
+{% include _set_lang.html %}
+
+
+<div class="flexslider">
+  <ul class="slides">
+{% for slide in site.data.gal-fc %}
+  {% if slide.lang == lang %}
+    {% assign sid = slide.id | prepend: "00000" | slice: -5,5 %}
+    <li data-slide-number="{{ slide.id }}">
+      <div class="{{ slide.caption-class }}">{{ slide.caption }}</div>
+      <img  srcset="{{ site.baseurl }}/bullets/fc/small/gfc{{ sid }}.jpg 768w,
+                    {{ site.baseurl }}/bullets/fc/medium/gfc{{ sid }}.jpg 992w,
+                    {{ site.baseurl }}/bullets/fc/large/gfc{{ sid }}.jpg 1200w,
+                    {{ site.baseurl }}/bullets/fc/gfc{{ sid }}.jpg 2545w"
+            sizes="100vw"
+            src="{{ site.baseurl }}/bullets/fc/gfc{{ sid }}.jpg" 
+            class="img-responsive">
+    </li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+
+      <a name="top" id="top" ></a>
+
+<nav class="navbar navbar-default navbar-noborder" id="capitoli">
+  <div class="container" >
+
+    <ul id="caps-capitoli" class="nav navbar-nav small">
+     <li role="presentation" id="cap-overview" class="{% if page.section == "overview" %} active {% endif %}" > <a href="./fc-overview.html#top">Overview</a></li>
+     <li role="presentation" id="cap-specifications" class="{% if page.section == "specifications" %} active {% endif %}" > <a href="./fc-specifications.html#top">Specifications</a></li>
+     <li role="presentation" id="cap-media" class="{% if page.section == "media" %} active {% endif %}" > <a href="./fc-media.html#top">Media</a></li>
+     <li class="cap-buy"><a href="./configurator.html">BUY</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="topping">&nbsp;</div>
+
+
+{{ content }}

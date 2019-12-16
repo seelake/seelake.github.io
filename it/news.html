@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="hardware VST host, live vst, digital mixer, multitrack recorder, multitrack player, patchbay, studio outboard, sound expander, pa" /><title>Seelake - News</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" >
+
+
+  <link href="../css/css-hub.css" rel="stylesheet" type="text/css">
+  
+  
+  <script language="javascript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+  <!-- Zoom -->
+
+  <script language="javascript" type="text/javascript" src="../scripts/jquery.imageZoom.js"></script>
+
+<!-- gestione dei cookie jQuery -->
+<script type="text/javascript" src="../scripts/jquery.cookie.js"></script>
+
+  <!-- funzione per selezionare la pagina e il capitolo in base al nomefile -->
+  <script type="text/javascript" src="../scripts/getfilename.js"></script>
+
+  <!--language switcher -->
+  <script type="text/javascript" src="../scripts/lang-switch.js"></script>
+
+  <!-- attivazione delle varie funzionalit&agrave; con document.ready -->
+  <script type="text/javascript" src="../scripts/document-ready.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(e) {
+    var user1 = 'info';
+    var domain1 = 'seelake';
+    var domain2 = 'artmusicgroup';
+    $('#mseelake').html('<a href="' + 'mail' + 'to:' + user1 + '@' + domain1 + '.' + 'it' + '">'  + user1 + '@' + domain1 + '.' + 'it'+'</a>');
+
+    $('#martmusic').html('<a href="' + 'mail' + 'to:' + user1 + '@' + domain2 + '.' + 'com' + '">'  + user1 + '@' + domain2 + '.' + 'com'+'</a>');
+
+    var htmlReadMore = '<div class="news-readmore">...fai click qui per ulteriori dettagli</div>';
+    var htmlReadLess = '<div class="news-readless">...fai click qui per nascondere i dettagli</div>'
+
+    $('.news-expandable').each(function() {
+
+      $(this).after(htmlReadMore).after(htmlReadLess);
+
+      $('.news-readmore').hide();
+      $('.news-readless').hide();
+
+		// se il testo &egrave; pi&ugrave; alto di 212px facciamo comparire il pulsante di espansione
+		// e nascondiamo quello che eccede i 212px
+		if($(this).height() > 212) {
+			$(this).siblings('.news-readmore').show();
+			//$(this).css({'height': '212px', 'overflow' : 'hidden'});
+		}
+
+		
+	});
+
+    $('.news-readmore').click(function() {
+     $(this).siblings('.news-expandable').css({'height':'auto', 'overflow':'visible'});
+     $(this).hide();
+     $(this).siblings('.news-readless').show();
+   });
+
+    $('.news-readless').click(function() {
+     $(this).siblings('.news-expandable').css({'height': '212px', 'overflow' : 'hidden'});
+     $(this).hide();
+     $(this).siblings('.news-readmore').show();
+   });
+  });
+</script>
+<style>
+.news-readmore,
+.news-readless {
+	cursor: pointer;
+	background-color: #F8E4E4;
+	font-style:italic;
+}
+.news-expandable {
+	margin-left: 132px;
+}
+.news-data {
+	display: block;
+	font-style:italic;
+}
+.news-titolo {
+	display:block;
+	font-weight: bold;
+}
+
+.no-background IMG.news-img {
+	float: left;
+	vertical-align: top;
+	margin-right: 26px;
+}
+</style>
+
+<!-- Google Analytics -->
+<script type="text/javascript" src="../scripts/google.analytics.js"></script>
+</head>
+
+<body>
+  <div class="container"><!-- #BeginLibraryItem "/Library/header_it.lbi" -->  <div id="header">
+
+    <ul id="headings">	
+     <li id="logo">
+       <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="161" height="22" id="logo-seelake" onclick="window.location='/'; return false;">
+        <param name="movie" value="../bullets/logo-seelake.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#ffffff" />
+        <param name="play" value="true" />
+        <param name="loop" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="scale" value="showall" />
+        <param name="menu" value="true" />
+        <param name="devicefont" value="false" />
+        <param name="salign" value="" />
+        <param name="allowScriptAccess" value="sameDomain" />
+        <!--[if !IE]>-->
+        <object type="application/x-shockwave-flash" data="../bullets/logo-seelake.swf" width="161" height="22">
+         <param name="movie" value="../bullets/logo-seelake.swf" />
+         <param name="quality" value="high" />
+         <param name="bgcolor" value="#ffffff" />
+         <param name="play" value="true" />
+         <param name="loop" value="true" />
+         <param name="wmode" value="transparent" />
+         <param name="scale" value="showall" />
+         <param name="menu" value="true" />
+         <param name="devicefont" value="false" />
+         <param name="salign" value="" />
+         <param name="allowScriptAccess" value="sameDomain" />
+         <!--<![endif]-->
+         <a href="/"><img src="../bullets/ico-logo.png" alt="" width="161" height="22"></a>
+         <!--[if !IE]>-->
+       </object>
+       <!--<![endif]-->
+     </object>
+   </li>
+   <li id="header-news"> <a href="news.html">NEWS</a></li>
+   <li id="header-products"> <a href="as-overview.html">PRODOTTI</a></li>
+   <li id="header-videos"> <a href="videos.html">MEDIA</a></li>
+   <li id="header-support"> <a href="support.html">SUPPORTO</a></li>
+   <li id="header-artists"> <a href="artists.html">ARTISTI</a></li>
+   <li id="header-contacts"> <a href="contacts.html">CONTATTI</a></li>
+   <li class="header-separator"></li>
+   <li id="header-search"> <a href="#">search</a></li>
+ </ul> 
+
+ <ul id="lang-switchers">
+  <li class="header-lang"> <a href="../en/as-overview.html" id="lang_en">ENG</a></li>
+  <li class="header-lang"><a href="as-overview.html" id="lang_it">ITA</a></li>
+</ul>
+
+</div><!-- #EndLibraryItem --><div id="content">
+<div class="row no-background">
+ <h2>News</h2>
+</div>
+
+<div class="row no-background" id="news12"><img src="../images/news_midi_over_wifi.png" width="106" height="128" class="news-img">
+  <div class="news-data">4 Aprile 2016</div>
+  <div class="news-titolo">OS Update: Supporto del MIDI via Wi-Fi Network</div>
+  <div class="news-expandable">
+   <p>AudioStation ora supporta il protocollo Wi-Fi MIDI Network.<br>Con questa nuova funzionalità è possibile controllare i plug-ins (o i software DAW) in esecuzione su AudioStation utilizzando come MIDI controller un iPad/iPhone and una applicazione MIDI controller che invia messaggi MIDI via Wi-Fi network utilizzando il protocollo UDP, come ad esempio MIDI Studio APP o molte altre.</p>
+  </div>
+  
+</div>
+
+<div class="row no-background" id="news11"><img src="../images/news_jovanotti_tour.png" width="106" height="128" class="news-img">
+  <div class="news-data">1 Agosto 2015</div>
+  <div class="news-titolo">AudioStation sbarca sul palco di Jovanotti!</div>
+  <div class="news-expandable">
+   <p>Christian Rigano, tastierista di Lorenzo Jovanotti, Elisa, Tiziano Ferro e moltri altri importanti musicisti ha scelto AudioStation X64 per suonare dal vivo con strumenti ed effetti VST e riprodurre le parti audio campionate utilizzate nelle canzoni di Lorenzo Jovanotti. Vedi i dettagli nella <a href="./artists.html">pagina artisti.</a></p>
+  </div>
+  
+</div>
+
+<div class="row no-background" id="news10"><img src="../images/news_jack_audio_server.png" width="106" height="128" class="news-img">
+  <div class="news-data">1 Marzo 2015</div>
+  <div class="news-titolo">Jack Audio Server per Audiostation</div>
+  <div class="news-expandable">
+   <p>Per superare i limiti del driver ASIO - che non consente di utilizzare la scheda audio con due o più applicazioni ASIO contemporaneamente - AudioStation è stata equipaggiata con Jack Audio Server.<br>
+Grazie a questa funzionalità il VST Host di AudioStation puà essere utilizzato assieme ad altre applicazioni software, come Ableton Live, Pro Tools, Cubase, Nuendo, Sonar, Wavelab e molti altri, condividendo gli ingressi e le uscite audio di AudioStation tra le applicazioni in esecuzione.<br>Gli utenti più esperti potranno anche utilizzare JackControl (la patchbay audio di Jack Audio Server) per instradare liberamente i segnali audio tra le applicazioni.</p>
+  </div>
+  
+</div>
+
+<div class="row no-background" id="news09"><img src="../images/news_2014namm.png" width="106" height="128" class="news-img">
+  <div class="news-data">23-26 Gennaio 2014</div>
+  <div class="news-titolo">AudioStation al <a href="http://www.namm.org/files/X/HallA&Arena.html">NAMM SHow 2014</a>!</div>
+  <div class="news-expandable">
+   <p>Vieni a scprire le nuove AudioStation X64, 3D AudioStation e un Nuovo Misterioso Apparecchio... al NAMM Show 2014! Ci trovi al Padiglione <a href="http://www.namm.org/files/X/HallA&Arena.html">Hall A &amp; Arena, stand 7410</a>.
+Ti aspettiamo!</p>
+  </div>
+  
+</div>
+
+<div class="row no-background" id="news08"><img src="../images/news_asx64.png" width="106" height="128" class="news-img">
+  <div class="news-data">01 Gennaio 2014</div>
+  <div class="news-titolo">Nuova AudioStation X64: un nuovo passo avanti!</div>
+  <div class="news-expandable">
+   <p>Buon 2014 a tutti!</p>
+    <p>Siamo felici ed orgogliosi di annunciare la nuova AudioStation X64, totalmente a 64-bit e con ulteriori interessanti funzioni...</p>
+    <p>Ecco le principali caratteristiche:</p>
+    <ul>
+      <li>OS di tipo embedded a 64-bit basato sul kernel di Microsoft Windows 7, espressamente creato e ottimizzato per l’elaborazione di segnali audio.</li>
+      <li>CPU Intel i5 e i7 quad-core.</li>
+      <li>Fino a 32GB di memoria.</li>
+      <li>VST host-mixer a 64-bit con bridge a 32-bit, 100% compatibile con tutti i plugin VST a 64-bit e 32-bit.</li>
+      <li>Supporto per i controller MIDI-USB e Ethernet.</li>
+      <li>Controllabile in remoto e programmabile anche con iPad via WiFi (il segnale WiFi è generato direttamente da AudioStation - non è necessaria una connessione Internet o hardware aggiuntivo).</li>
+      <li>Ancora più funzioni di controllo dei parametri dei plugins.</li>
+      <li>Compatibile con tutti i software DAW e le applicazioni musicali per Windows 7.</li>
+    </ul>
+  </div>
+  
+</div>
+
+<div class="row no-background" id="news07"><img src="../images/news_2013update.png" alt="" width="106" height="128" class="news-img">
+ <div class="news-data">2 Gennaio 2013</div>
+ <div class="news-titolo">Novit&agrave; 2013: il pi&ugrave; grande aggiornamento che abbiamo mai rilasciato!</div>
+ <div class="news-expandable">
+   <p>Buon anno a tutti!</p>
+   <p>Dopo 6 mesi di intenso lavoro, siamo felici di annunciare una nuova versione del software di AudioStation, con tantissime e interessanti nuove funzioni: mutli-in e multi-out, nuove funzioni di preload e supporto dei controller USB-MIDI, sono solo alcune di esse.</p>
+   <p>Ecco l'elenco completo:</p>
+   <ul>
+     <li><em>Multi-In</em>: &egrave; utile per elaborare i segnali audio con plug-in multicanale (Surround Sound 5.1, 7.1 e altri). L&rsquo;opzione Multi-In consente infatti di configurare i canali audio con 6, 8 o 10 ingressi audio e indirizzare i segnali ad altrettante uscite.</li>
+     <li><em>Multiout</em>: &egrave; utile per indirizzate a uscite separate i segnali di plug-in multitimbrici dotati di uscite multiple, ad esempio per elaborare e/o registrare distintamente i suoni di una batteria o altro.</li>
+     <li><em>Performance Preload</em>: consente di impostare il preload della Performance e le relative Patch con un solo click.</li>
+     <li><em>Automatic Preload of Next Performance</em>: &egrave; una impostazione globale per precaricare automaticamente la Performance successiva a quella in uso (e tutte le sue Patch), senza la necessit&agrave; di ulteriori impostazioni.</li>
+     <li><em>Preload on the fly</em>...: mentre un set up &egrave; in uso &egrave; sufficiente indicare una nuova Performance e il preload inizier&agrave; automaticamente.</li>
+     <li><em>Supporto per controller MIDI-USB</em>: consente di collegare ad AudioStation qualsiasi controller MIDI-USB o Ethernet.</li>
+     <li><em>MIDI bypass degli slot Insert VST</em>: lo stato On/Off degli slot Insert VST ora pu&ograve; essere controllato anche via MIDI. </li>
+     <li><em>Funzione AND per il controllo MIDI dei parametri del plugin</em>: consente di definire un complesso insieme di cambiamenti per la regolazione dei parametri dei plug-in via MIDI.</li>
+     <li><em>Funzione Toggle</em> per il controllo MIDI dei parametri del plugin: cambia l&rsquo;azione On/Off di pulsanti, interruttori a pedale e tasti da momentanea a permanente, consentendogli di svolgere On o Off alternativamente ad ogni pressione.</li>
+     <li><em>Note Toggle</em>: cambia l&rsquo;azione On/Off dei tasti da momentanea a permanente, consentendogli di svolgere On o Off alternativamente ad ogni pressione.</li>
+     <li><em>Linear Knob</em>: consente di regolare le manopole trascinando il mouse in verticale (al posto del movimento circolare). </li>
+     <li><em>Regolazione del Tempo con LiveControl</em>: ora il Tempo pu&ograve; essere regolato anche con LiveControl.</li>
+     <li><em>Elenco dei plugin modificabile</em>: l'elenco dei plugin ora &egrave; contenuto in un un file facilmente modificabile.</li>
+   </ul>
+   <p><em>Nuove funzioni introdotte con il precedente aggiornamento</em>:</p>
+   <ul>
+     <li><em>Supporto VST3</em>: consente di utilizzare anche i nuovi plugin VST3.</li>
+     <li><em>Save All</em>: &egrave; utile per salvare la Performance e le Patch di tutti canali utilizzati con un solo comando e con l stesso nome e numero di memoria.</li>
+     <li><em>Continuous MIDI Clock</em>: consente di inviare il segnale di MIDI Clock anche senza avviare il playback del player audio.  </li>
+   </ul>
+ </div>
+</div>
+
+<div class="row no-background" id="news06"><img src="../images/news_2012messe.png" width="106" height="128" class="news-img">
+  <div class="news-data">21-24 Marzo 2012</div>
+  <div class="news-titolo">AudioStation al <a href="http://musik.messefrankfurt.com/frankfurt/en/fairground.layer.fairground.html?HallID=5&Audience=besucher&Booth=D54&VenueID=5.1" target="_blank">Musik Messe 2012</a>!</div>
+  <div class="news-expandable">
+   <p>Vieni a provare AudioStation at Musik Messe 2012! Ci trovi al <a href="http://musik.messefrankfurt.com/frankfurt/en/fairground.layer.fairground.html?HallID=5&Audience=besucher&Booth=D54&VenueID=5.1" target="_blank">Padiglione 5, stand D54</a>.<BR>
+     Auf wiedersehen!</p>
+   </div>
+   
+ </div>
+
+ <div class="row no-background" id="news05"><img src="../images/news_sanremo.png" width="106" height="128" class="news-img">
+  <div class="news-data">16 Gennaio 2012</div>
+  <div class="news-titolo">AudioStation approda  al <a href="http://www.sanremo.rai.it">Festival di Sanremo</a>!</div>
+  <div class="news-expandable">Nemmeno il Festival di Sanremo ha resistito al &ldquo;fascino&rdquo; di AudioStation... Per riprodurre dal vivo i suoni utilizzati nei dischi dai vari musicisti, i tastieristi dell'orchestra hanno scelto di utilizzare AudioStation: &egrave; sufficiente installare i plug-in preferiti ed il gioco &egrave; fatto! </div>
+  
+</div>
+
+<div class="row no-background" id="news04"><img src="../images/news_audiostationvst3.png" alt="" width="106" height="128" class="news-img">
+ <div class="news-data">21 Novembre 2011</div>
+ <div class="news-titolo">Utilizza i nuovi plug-in VST3!</div>
+ <div class="news-expandable">Grazie alla nuova release software con integrazione dello standard VST3, <a href="as-overview.html">AudioStation</a> supporta anche i nuovi plug-in basati su questo nuovo
+   protocollo con
+   caratteristiche avanzate e minore utilizzo di CPU power. E in aggiunta: <em>Save All</em> salva<br>
+   snapshot dell&rsquo;intera console con un solo click e <em>Continuous MIDI Clock</em> mantiene in sync qualsiasi apparecchio MIDI.</div>
+   
+ </div>
+
+ <div class="row no-background" id="news01">
+  <img src="../images/news_audiostationpatchmanager.png" width="106" height="128" class="news-img">
+  <div class="news-data">25 Agosto 2011</div>
+  <div class="news-titolo">Riorganizza facilmente le tue catene di setup con AudioStation Patch Manager…
+
+  </div><div class="news-expandable">
+
+  Con il nuovo software AudioStation Patch Manager &egrave; davvero facile e intuitivo riorganizzare l&rsquo;ordine dei propri setup per adattarli ad ogni situazione… Grazie a un&rsquo;interfaccia grafica semplice e intuitiva e all&rsquo;operativit&agrave; drag-and-drop, spostamenti, inserimenti, eliminazione, ordine crescente o decrescente, rename, preload e altre operazioni sulle patch possono essere eseguite facilmente con pochi click del mouse. Per informazioni e prezzo:
+  <div class="mailto" id="mseelake"><img src="../bullets/mailto-seelake.png" alt="" width="100" height="20"></div>
+</div>
+</div>
+
+<div class="row no-background" id="news02">
+  <img src="../images/news_bloodybeetrootsusingaudiostation.png" width="106" height="128" class="news-img"><div class="news-data">3 Giugno 2011</div>
+  <div class="news-titolo">Anche I Bloody Beetrots hanno scelto AudioStation!
+  </div>
+  <div class="news-expandable">
+   <p>Una  volta accesa sono bastati pochi minuti a Sir Bob Rifo, leader dei  Bloody Beetrots, per decidere che <a href="as-overview.html">AudioStation</a> &egrave; veramente ci&ograve; di cui ha  bisogno per portare dal vivo i suoni e gli effetti VST utilizzati in  studio e realizzare facilmente i complessi setup per il loro tour live.</p>
+ </div>
+</div>
+
+<div class="row no-background" id="news03"><img src="../images/news_audiostationreadytogo.png" width="106" height="128" class="news-img">
+  <div class="news-data">1 Giugno 2011</div>
+  <div class="news-titolo">Rilasciata <a href="as-overview.html">AudioStation versione 2011</a>: il VST Player definitivo!</div>
+  <div class="news-expandable">Dopo due ulteriori anni di sviluppo e test dalla presentazione della prima e gi&agrave; perfettamente funzionante versione di AudioStation &#8212; della quale sono state prodotte solo un centinaio di unit&agrave;, consegnate unicamente a endorser e beta tester &#8212; <a href="as-overview.html">ecco</a> la versione finale e pronta per la vendita di quello che pu&ograve; essere veramente definito il VST Player definitivo! </div>
+  
+</div>
+
+
+
+<!-- end .content --></div>
+<div id="footer"><!-- #BeginLibraryItem "/Library/footer_it.lbi" -->
+  <a href="#disclaimer" id="disclaimer-link">Copyright e Note Legali</a>
+  
+  <div id="disclaimer">
+   <p class="nota">COPYRIGHT<br>
+     Tutti i contenuti di questo sito sono propriet&agrave;intellettuale di Seelake. Le informazioni presenti su questo sito sono suscettibili di variazioni senza preavviso. Tutti i diritti riservati.<br>
+     Copyright &copy; 2011 Seelake.</p>
+     <p class="nota">NOTE LEGALI<br>
+       Tutti i marchi e i nomi presenti in questo sito sono registrati dai legittimi proprietari, e sono citati solo per descrivere il prodotto. Il loro utilizzo non indica in nessun modo una relazione fra Seelake e i proprietari di detti marchi. VST, Cubase, Nuendo e Wavelab sono marchi registrati di Steinberg GBMH. Sonar &egrave; un marchio registrato di Cakewalk, Inc. Windows &egrave; un marchio registrato di Microsoft Corporation. ProTools &egrave; un marchio registrato di Avid Technology, Inc. Ableton
+       Live &egrave; un marchio registrato di Ableton AG. Sound Forge &egrave; un marchio registrato di Sony Corp.</p>
+     </div>
+     <!-- #EndLibraryItem --></div>
+
+     <!-- end .container --></div>
+
+
+     <script type="text/javascript">
+  // fix IE bug where hash anchors don't update scrolltop on some occasions
+  if (window.location.hash)
+    window.location = window.location.hash;
+  </script>
+</body>
+</html>

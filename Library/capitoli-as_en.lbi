@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<a name="top"></a>
+<div id="capitoli">
+ <ul>
+  <li id="cap-overview"> <a href="../en/as-overview.html#top">Overview</a></li>
+  <li id="cap-vstplayer"> <a href="../en/as-vstplayer.html#top">VST Player</a></li>
+  <li id="cap-digitalmixer"> <a href="../en/as-digitalmixer.html#top" >Digital Mixer</a></li>
+  <li id="cap-midipatchbay"> <a href="../en/as-midipatchbay.html#top">MIDI patchbay</a></li>
+  <li id="cap-audioplayer"> <a href="../en/as-audioplayer.html#top">Audio Player</a></li>
+  <li id="cap-livecontrol"> <a href="../en/as-livecontrol.html#top">Live Control</a></li>
+  <li id="cap-vstplugins"> <a href="../en/as-vstplugins.html#top">Plug-ins</a></li>
+  <li id="cap-daw"> <a href="../en/as-daw.html#top">DAW</a></li>
+  <li id="cap-specifications"> <a href="../en/as-specifications.html#top">Specifications</a></li>
+</ul> 
+<!-- end #capitoli--></div>

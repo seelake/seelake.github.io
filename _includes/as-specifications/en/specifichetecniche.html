@@ -1,0 +1,83 @@
+{% if include.product == "asx" %}
+
+<div class="container">
+  <div class="row">
+      <h2>Specifications</h2>
+      <ul>
+          <li> Conversion parameters:
+              <ul>
+                  <li> Digital and analog I/O Sample Rates: 44.1, 48, 88.2, 96KHz.</li>
+                  <li> Bit Depth: 24 bits</li>
+              </ul>
+          </li>
+          <li> Microphone inputs (AD):
+              <ul>
+                  <li> Frequency response: 20Hz-22KHz @ 48KHz; 22Hz-40KHz @ 96KHz.</li>
+                  <li> Dynamic range: 100dB (A-weighted)</li>
+                  <li> S/N ratio: 100dB (A-weighted)</li>
+                  <li> THD+N: 0.005% @ 1KHz, G=1</li>
+                  <li> Gain: 70dB max</li>
+              </ul>
+          </li>
+          <li> Line inputs (A/D):
+              <ul>
+                  <li> Frequency response: 20Hz-22KHz @ 48KHz; 22Hz-40KHz @ 96KHz</li>
+                  <li> Dynamic range: 100dB (A-weighted)</li>
+                  <li> S/N ratio: 100dB (A-weighted)</li>
+                  <li> THD+N: 0.002%.</li>
+              </ul>
+          </li>
+          <li> Line outputs (D/A):
+              <ul>
+                  <li> Frequency response: 20Hz-22KHz @ 48KHz; 22Hz-40KHz @ 96KHz</li>
+                  <li> Dynamic range: 102dB (A-weighted)</li>
+                  <li> S/N ratio: 102dB (A-weighted)</li>
+                  <li> THD+N: 0.002%</li>
+              </ul>
+          </li>
+          <li> Weights and sizes:
+              <ul>
+                  <li> Console's size: 89 (H) x 446 (W) x 425 (D) mm / 3.5 (H) x 17.6 (W) x 16.7 (D) inches</li>
+                  <li> Console's weight: 9 Kg / 19.8 lbs</li>
+                  <li> LiveControl size: 45 (H) x 228 (W) x 114 (D) mm / 1.8 (H) x 8.9 (W) x 4.5 (D) inches</li>
+                  <li> LiveControl weight: 0.44 Kg / 1 lb</li>
+                  <li> LiveControl connection cable length: 5 m / 16.4 ft (10 m / 32.8 ft with optional extension cord)</li>
+              </ul>
+          </li>
+          <li> Power:
+              <ul>
+                  <li> 100-240V, 50-60Hz, 4-2A</li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+</div>
+
+{% elsif include.product == "asm"  %}
+
+<div class="container">
+  <div class="row">
+      <h2>Specifications</h2>
+      <ul>
+          <li> Weights and sizes, console:
+              <ul>
+                  <li> Size: 44 (H) x 350 (W) x 250 (D) mm </li>
+                  <li> Weight: 2.5Kg</li>
+              </ul>
+          </li>
+          <li> Weights and sizes, Live Control (optional):
+              <ul>
+                  <li> Size: 45 (H) x 228 (W) x 114 (D) mm / 1.8 (H) x 8.9 (W) x 4.5 (D) inches</li>
+                  <li> Weight: 0.44 Kg </li>
+              </ul>
+          </li>
+          <li> Power:
+              <ul>
+                  <li> 100-240V, 50-60Hz, 2A max</li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+</div>
+
+{% endif %}

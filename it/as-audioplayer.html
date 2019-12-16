@@ -1,0 +1,58 @@
+--- 
+layout: asx 
+title: AudioStation AudioPlayer 
+section: audioplayer 
+---
+
+{% include _set_lang.html %}
+
+<div id="toc" class="panel panel-default col-md-6 col-md-offset-6">
+    <div class="panel-heading">In questa pagina:</div>
+    <ul>
+        <li> <a href="#digitalaudioplayerrecorder">Digital Audio Player/Recorder</a></li>
+        <li> <a href="#submixer">Il submixer</a></li>
+        <li> <a href="#playbackrecording">Playback e recording</a></li>
+        <li> <a href="#selezionedellebasimusicali">Selezione delle basi musicali</a></li>
+        <li> <a href="#signaturetemposongposition">Signature, Tempo e Song Position</a></li>
+        <li> <a href="#audiomidiclick">Audio e MIDI click</a></li>
+    </ul>
+</div>
+<a name="digitalaudioplayerrecorder" class="anchor"></a>
+<section>
+  {% include as-{{ page.section }}/{{ lang }}/digitalaudioplayerrecorder.html %}
+  
+</section>
+
+<a name="submixer" class="anchor"></a>
+<section class="section-gradient">
+  {% include as-{{ page.section }}/{{ lang }}/submixer.html %}
+  
+</section>
+
+
+<a name="playbackrecording" class="anchor" id="playbackrecording"></a>
+<section class="section-gradient">
+  {% include as-{{ page.section }}/{{ lang }}/playbackrecording.html %}
+  
+</section>
+
+
+<a name="selezionedellebasimusicali" class="anchor"></a>
+<section class="section-gradient">
+    {% include as-{{ page.section }}/{{ lang }}/selezionedellebasimusicali.html %}
+  
+</section>
+
+
+<a name="signaturetemposongposition" class="anchor" id="signaturetemposongposition"></a>
+<section class="section-gradient">
+    {% include as-{{ page.section }}/{{ lang }}/signaturetemposongposition.html %}
+  
+</section>
+
+<a name="audiomidiclick" class="anchor"></a>
+<section class="section-gradient">
+    {% include as-{{ page.section }}/{{ lang }}/audiomidiclick.html %}
+  
+</section>
+<!-- end #pagina -->

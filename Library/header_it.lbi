@@ -1,0 +1,52 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <div id="header">
+  
+    <ul id="headings">	
+     <li id="logo">
+     <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="161" height="22" id="logo-seelake" onclick="window.location='/'; return false;">
+				<param name="movie" value="../bullets/logo-seelake.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="../bullets/logo-seelake.swf" width="161" height="22">
+					<param name="movie" value="../bullets/logo-seelake.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					 <a href="/"><img src="../bullets/ico-logo.png" alt="" width="161" height="22"></a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+    </li>
+    <li id="header-news"> <a href="../it/news.html">NEWS</a></li>
+    <li id="header-products"> <a href="../it/as-overview.html">PRODOTTI</a></li>
+    <li id="header-videos"> <a href="../it/videos.html">MEDIA</a></li>
+    <li id="header-support"> <a href="../it/support.html">SUPPORTO</a></li>
+    <li id="header-artists"> <a href="../it/artists.html">ARTISTI</a></li>
+    <li id="header-contacts"> <a href="../it/contacts.html">CONTATTI</a></li>
+ <li class="header-separator"></li>
+    <li id="header-search"> <a href="#">search</a></li>
+  </ul> 
+  
+  <ul id="lang-switchers">
+  <li class="header-lang"> <a href="../en/as-overview.html" id="lang_en">ENG</a></li>
+<li class="header-lang"><a href="../it/as-overview.html" id="lang_it">ITA</a></li>
+</ul>
+
+ </div>

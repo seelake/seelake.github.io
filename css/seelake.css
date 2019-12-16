@@ -1,0 +1,661 @@
+@charset "utf-8";
+
+
+/*@font-face {
+    font-family: 'square721_btroman';
+    src: url('../fonts/sqr721n-webfont.eot');
+    src: url('../fonts/sqr721n-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sqr721n-webfont.woff') format('woff'),
+         url('../fonts/sqr721n-webfont.ttf') format('truetype'),
+         url('../fonts/sqr721n-webfont.svg#square721_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Square721 Ex BT';
+    src: url('../fonts/subset-Square721BT-RomanExtended.eot');
+    src: url('../fonts//subset-Square721BT-RomanExtended.eot?#iefix') format('embedded-opentype'),
+        url('../fonts//subset-Square721BT-RomanExtended.woff') format('woff'),
+        url('../fonts//subset-Square721BT-RomanExtended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* direttive per il pulsante back-to-top */
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+a#back-to-top {
+    background-color: #B20000;
+    border-color: #B20000;
+    color: #fff;
+}
+
+
+/* direttive per le faq */
+
+.faq-question {
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding-bottom: 10px;
+}
+
+.faq {}
+
+.container {
+    max-width: 994px; /*porta larghezza netta del contenuto a 948*/
+    /*max-width: 966px; *//*larghezza netta a 920*/
+    /*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
+}
+
+/* truncate text with ellipsis */
+/* https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/ */
+.truncate-text {
+  /*width: 250px;*/
+  max-height: 4.8em;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 28px;
+}
+
+.row-no-bottom {
+    padding-bottom: 0;
+}
+
+.img-spaced {
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+/* tutte le immagini che non hanno una classe che termini con "spaced" */
+img:not([class$="spaced"]) {
+    margin-bottom:35px;
+}
+
+.slides img {
+    margin-bottom: 0;
+}
+
+img.pull-right {
+    margin-bottom: 28px;
+    margin-left: 24px;
+}
+
+img.pull-left {
+    margin-bottom: 28px;
+    margin-right: 24px;
+}
+
+.section-gradient {
+    border-top: 1px solid #d9dadb;
+    /*sfondo*/
+    /* fallback non applicabile - è per altezze fisse*/
+    background: transparent;
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(100% 100% 90deg, #ffffff, #fafafa);
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fafafa), to(#ffffff));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(#fafafa, #ffffff);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(#fafafa, #ffffff);
+    /* IE 5.5+ */
+    filter: progid: DXImageTransform.Microsoft.Gradient (endColorstr='#ffffff', startColorstr='#fafafa', gradientType='0');
+}
+
+.section-grey {
+    background-color: rgb(215, 210, 203);
+}
+
+
+.thumb-selected img {
+    opacity: 0.5;
+}
+
+.avatar {
+    /*.img-responsive();*/
+    margin-right: 1.4em;
+}
+
+.tooltip > .tooltip-inner {
+    background-color: #fff;
+}
+
+.tooltip-bottom .tooltip-arrow {
+    background-color: #fff;
+}
+
+.no-background {
+    border: none;
+    background: none;
+    filter: progid: DXImageTransform.Microsoft.Gradient (endColorstr='#ffffff', startColorstr='#ffffff', gradientType='0');
+}
+
+navbar-default {
+    border: none;
+}
+
+#mainnav {
+    font-size: 0.9em;
+
+    margin-bottom: 0px;
+    background-color: rgb(12%, 12%, 12%);
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+#mainnav .navbar-nav > li > a {
+    color: #fff !important;
+    background-color: inherit;
+}
+
+.nav-condensed > li > a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+/* capitoletti del prodotto */
+
+#capitoli {
+    white-space: nowrap;
+    min-height: 40px;
+    margin-bottom: 0 !important;
+    z-index: 999;
+}
+
+#capitoli.navbar-default {
+    border: none;
+    border-top: 1px solid #d9dadb;
+    border-bottom: 1px solid #d9dadb;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#caps-capitoli.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+}
+
+#caps-capitoli li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    zoom: 1;
+    /* hasLayout ie7 trigger */
+}
+
+#caps-capitoli {
+    text-align: center;
+}
+
+#capitoli li > a {
+    /*	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;*/
+    color: #777;
+    padding: 0 8px;
+    border-right: 1px solid #ddd;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*#capitoli > li:first-child a {
+	border: none;
+}*/
+
+#capitoli li.active > a {
+    color: #B20000;
+    background: none;
+}
+
+#capitoli li.cap-buy a {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 28px;
+    margin-top: 6px;
+    margin-left: 8px;
+    /*margin-left: 6px;*/
+    padding: 0 14px;
+    border: 1px solid #18AEED;
+    background-color: #18AEED;
+    color: #fff;
+}
+
+#capitoli li.cap-buy a:hover {
+    border-color: #2D5FD8;
+    background-color: #2D5FD8;
+}
+
+
+/* Disable navbar collapse  */
+
+#capitoli .navbar-collapse.collapse {
+    display: block !important;
+}
+
+#capitoli .navbar-nav>li,
+#capitoli .navbar-nav {
+    float: left !important;
+}
+
+#capitoli .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+}
+
+#capitoli .navbar-right {
+    float: right !important;
+}
+
+
+/* consentono il bloccaggio smooth della barra capitoli 
+	richiedono però che alla barra capitoli segua un block */
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.affix + .topping {
+    padding-top: 40px;
+}
+
+.topping {
+    display: block;
+    height: 1px;
+}
+
+
+/* la TOC è temporaneamente disattivata (sarebbe da mostrarla/nasconderla) */
+
+#toc {
+    display: none;
+    margin-top: 26px;
+}
+
+/* Azzeriamo i padding delle colonne (gutter) */
+
+[class*="col-"],
+[class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Per le colonne affiancate però è necessario */
+
+/* ma solo su dispositivi larghi */
+
+.row > [class^="col-"]:not(:last-child) {
+    padding-right: 20px;
+}
+.row > [class^="col-"]:last-child {
+    /*padding-left: 20px;*/
+    padding-left: 0px;
+}
+
+[class^="col-"][class$="-12"] {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .row > [class^="col-"]:not(:last-child) {
+        padding-right: 0;
+    }
+    .row > [class^="col-"]:last-child {
+        padding-left: 0;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3,
+{
+    font-weight: 700;
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+.h1, h1 {
+    margin-top: 38px;
+    font-size: 38px;
+}
+
+.h2, h2 {
+    font-size: 28px;
+    margin-top: 28px;
+    margin-bottom: 26px;
+}
+
+.h3,
+h3 {
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+.xxx-large {
+    font-size: 3.4em;
+}
+
+.over-spaced {
+    margin-top: 46px;
+    margin-bottom: 28px;
+}
+
+.light-title {
+    font-weight: 200;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.text-primary {
+    color: #18AEED;
+}
+
+.title-avatar img {
+    float: left;
+    vertical-align: center;
+}
+
+.title-avatar img.img-spaced {
+    margin-bottom: 0;
+}
+
+.title-avatar {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+/*.overview-page [class^="col-"]  {
+	display: flex;
+	align-items: center;
+}*/
+
+
+/*.overview-page h3,
+.overview-page .h3 {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}*/
+
+#elenco-plugin h4 {
+    display: block;
+    float: none;
+    clear: both;
+}
+
+#elenco-plugin li {
+    float: left;
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+#elenco-plugin ul {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+#lightcase-overlay {
+    background-color: #666;
+}
+
+a.lightcase-icon-close {
+    color: #b20000 !important;
+}
+
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+footer {
+ 
+    color: #fff;
+    background-color: #444;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-text-link a:link,
+footer .footer-text-link a:visited {
+    color: #fff;
+}
+
+footer .footer-text-link a:active,
+footer .footer-text-link a:hover {
+    color: #444;
+}
+
+.footer-social {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/*.footer-social a {
+    padding: 10px 15px;
+}*/
+
+.footer-contact {
+    margin-top: 8px;
+}
+
+.iubenda-black {
+    /*all: revert;*/
+    font-size: unset !important;
+    font-family: unset !important;
+    font-weight: unset !important;
+    font-style: unset !important;
+    text-transform: unset !important;
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+    font-family: unset !important;
+    line-height: unset !important;
+    color: unset !important;
+    margin: unset !important;
+    display: unset !important;
+    -webkit-margin-before: unset !important;
+    -webkit-margin-after: unset !important;
+    -webkit-margin-start: unset !important;
+    -webkit-margin-end: unset !important;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+/* overridiamo gli angoli arrotondati nei button group bootstrap
+nel configuratore */
+.configurator .btn-group>.btn {
+    border-top-right-radius: 8px !important; 
+    border-top-left-radius: 8px !important; 
+    border-bottom-right-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+
+
+#banner-prodotto {
+    margin-bottom: 15px;
+}
+
+.artist-bio {
+    text-align: center;
+    display: block;
+    clear: both;
+    margin-bottom: 8px;
+}
+
+.artist-bio:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    content: "\f2c3";
+    margin-right: 10px;
+}
+
+.artist-bio:after {
+    display: inline-block;
+    content: "biography";
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 0 0 2em 0;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    font-style: italic;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: '“';
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+blockquote .signature {
+    margin-top: 10px;
+    font-style: normal;
+}
+
+blockquote .signature:before {
+    content: '[';
+    font-size: 2em;
+    vertical-align: -0.1em;
+    margin-right: 4px;
+}
+
+blockquote .signature:after {
+    content: ']';
+    font-size: 2em;
+    vertical-align: -0.1em;
+    margin-left: 4px;
+}
+
+#accordion .panel.panel-default {
+    border: 0;
+    margin-bottom: 20px;
+}
+
+#accordion .indicator {
+    font-size: 18px;
+    color: #B20000;
+}
+
+#accordion .accordion-question {
+    margin-left: 24px;
+}
+
+#artists_container section {
+    margin-bottom: 24px;
+}
+
+#artists_container .readmoreless {
+    display: block;
+}
+
+
+#artists_container .readmoreless.collapsed::after {
+    
+}
+
+/*#artists_container .readmoreless::after {
+        content: ' less';
+    }*/
+
+#artists_container .readmoreless:not(.collapsed) {
+    display: none;
+}
+
+
+

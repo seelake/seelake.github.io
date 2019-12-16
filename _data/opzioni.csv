@@ -1,0 +1,125 @@
+id_family,id_prod,id_gruppo,text,id_css,class,price,is_default,is_enabled
+asm,asm_std,cpu,Intel Core i7 quad-core,i7,,230,,1
+asm,asm_std,cpu,Intel Core i5 quad-core,i5,,125,,1
+asm,asm_std,cpu,Intel Core i3 quad-core,i3,,0,1,1
+asm,asm_std,ram,32GB (4x8GB) RAM,32gb,,0,,0
+asm,asm_std,ram,16GB (2x8GB) RAM,16gb,,55,,1
+asm,asm_std,ram,8GB (1x8GB) RAM,8gb,,0,1,1
+asm,asm_std,hdd,512GB Hard Disk(*),512hdd,,0,,0
+asm,asm_std,hdd,1TB Hard Disk(*),1hdd,,0,,0
+asm,asm_std,hdd,2TB Hard Disk(*),2hdd,,0,,0
+asm,asm_std,hdd,256GB Solid State disk(*),256ssd,,0,1,1
+asm,asm_std,hdd,512GB Solid State disk(*),512ssd,,75,,1
+asm,asm_std,hdd,1TB Solid State disk(*),1ssd,,215,,1
+asm,asm_std,hdd,2TB Solid State disk(*),2ssd,,525,,1
+asm,asm_std,hdb,512GB Hard Disk(*),512hddb,,0,,0
+asm,asm_std,hdb,1TB Hard Disk(*),1hddb,,0,,0
+asm,asm_std,hdb,2TB Hard Disk(*),2hddb,,0,,0
+asm,asm_std,hdb,256GB Solid State disk(*),256ssdb,,0,,0
+asm,asm_std,hdb,512GB Solid State disk(*),512ssdb,,0,,0
+asm,asm_std,hdb,1TB Solid State disk(*),1ssdb,,0,,0
+asm,asm_std,hdb,2TB Solid State disk(*),2ssdb,,0,,0
+asm,asm_std,aud,4x4 analog I/O, SPDIF Out,4x4aud,0,0,1,1
+asm,asm_std,aud,8x8 analog I/O,8x8aud,,370,,1
+asm,asm_std,aud,"2x2 analog, ADAT, AES, SPDIF I/O",2x2aud,,430,,1
+asm,asm_std,aud,3xADAT I/O,ADAT,,240,,1
+asm,asm_std,aud,2xMADI I/O,MADI,,805,,1
+asm,asm_std,fw,With FireWire Interface Card,fw,,0,,0
+asm,asm_std,fw,Without FireWire Interface Card,fwno,,0,,0
+asm,asm_std,lc,LiveControl Remote Remote,lc,,225,,1
+asm,asm_std,lc,Without LiveControl Remote Remote,lcno,,0,1,1
+asm,asm_std,fc,AudioStation Foot Controller,fc,,90,,1
+asm,asm_std,fc,Without AudioStation Foot Controller,fcno,,0,1,1
+asm,asm_adv,cpu,Intel Core i7 quad-core,i7,,230,,1
+asm,asm_adv,cpu,Intel Core i5 quad-core,i5,,125,,1
+asm,asm_adv,cpu,Intel Core i3 quad-core,i3,,0,1,1
+asm,asm_adv,ram,32GB (4x8GB) RAM,32gb,,0,,0
+asm,asm_adv,ram,16GB (2x8GB) RAM,16gb,,55,,1
+asm,asm_adv,ram,8GB (1x8GB) RAM,8gb,,0,1,1
+asm,asm_adv,hdd,512GB Hard Disk(*),512hdd,512GB,0,,0
+asm,asm_adv,hdd,1TB Hard Disk(*),1hdd,1TB,0,,0
+asm,asm_adv,hdd,2TB Hard Disk(*),2hdd,2TB,0,,0
+asm,asm_adv,hdd,256GB Solid State disk(*),256ssd,256GB,0,1,1
+asm,asm_adv,hdd,512GB Solid State disk(*),512ssd,512GB,75,,1
+asm,asm_adv,hdd,1TB Solid State disk(*),1ssd,1TB,215,,1
+asm,asm_adv,hdd,2TB Solid State disk(*),2ssd,2TB,525,,1
+asm,asm_adv,aud,4x4 analog I/O, SPDIF Out,4x4aud,0,0,1,1
+asm,asm_adv,aud,8x8 analog I/O,8x8aud,,370,,1
+asm,asm_adv,aud,"2x2 analog, ADAT, AES, SPDIF I/O",2x2aud,,430,,1
+asm,asm_adv,aud,3xADAT I/O,ADAT,,240,,1
+asm,asm_adv,aud,2xMADI I/O,MADI,,805,,1
+asm,asm_adv,fw,With Firewire Interface Card,fw,,0,,0
+asm,asm_adv,fw,Without Firewire Interface Card,fwno,,0,,0
+asm,asm_adv,lc,LiveControl Remote,lc,,225,,1
+asm,asm_adv,lc,Without LiveControl Remote Remote,lcno,,0,1,1
+asm,asm_adv,fc,AudioStation Foot Controller,fc,,90,,1
+asm,asm_adv,fc,Without AudioStation Foot Controller,fcno,,0,1,1
+asm,asm_adv,hdb,512GB Hard Disk(*),512hddb,512GB,0,,0
+asm,asm_adv,hdb,1TB Hard Disk(*),1hddb,1TB,0,,0
+asm,asm_adv,hdb,2TB Hard Disk(*),2hddb,2TB,0,,0
+asm,asm_adv,hdb,256GB Solid State disk(*),256ssdb,256GB,0,1,1
+asm,asm_adv,hdb,512GB Solid State disk(*),512ssdb,512GB,75,,0
+asm,asm_adv,hdb,1TB Solid State disk(*),1ssdb,1TB,215,,0
+asm,asm_adv,hdb,2TB Solid State disk(*),2ssdb,2TB,525,,0
+asx,asx_std,cpu,Intel Core i7 quad-core,i7,,210,,1
+asx,asx_std,cpu,Intel Core i5 quad-core,i5,,0,1,1
+asx,asx_std,cpu,Intel Core i3 quad-core,i3,,0,,0
+asx,asx_std,ram,32GB (4x8GB) RAM,32gb,,150,,1
+asx,asx_std,ram,16GB (2x8GB) RAM,16gb,,50,,1
+asx,asx_std,ram,8GB (1x8GB) RAM,8gb,,0,1,1
+asx,asx_std,hdd,512GB Hard Disk(*),512hdd,,0,,0
+asx,asx_std,hdd,1TB Hard Disk(*),1hdd,,0,1,1
+asx,asx_std,hdd,2TB Hard Disk(*),2hdd,,40,,1
+asx,asx_std,hdd,256GB Solid State disk(*),256ssd,,60,,1
+asx,asx_std,hdd,512GB Solid State disk(*),512ssd,,130,,0
+asx,asx_std,hdd,1TB Solid State disk(*),1ssd,,260,,1
+asx,asx_std,hdd,2TB Solid State disk(*),2ssd,,580,,1
+asx,asx_std,hdb,512GB Hard Disk(*),512hddb,,0,,0
+asx,asx_std,hdb,1TB Hard Disk(*),1hddb,,0,,0
+asx,asx_std,hdb,2TB Hard Disk(*),2hddb,,0,,0
+asx,asx_std,hdb,256GB Solid State disk(*),256ssdb,,0,,0
+asx,asx_std,hdb,512GB Solid State disk(*),512ssdb,,0,,0
+asx,asx_std,hdb,1TB Solid State disk(*),1ssdb,,0,,0
+asx,asx_std,hdb,2TB Solid State disk(*),2ssdb,,0,,0
+asx,asx_std,aud,4x4 analog I/O, SPDIF Out,4x4aud,0,0,,0
+asx,asx_std,aud,8x8 analog I/O,8x8aud,,370,,0
+asx,asx_std,aud,"2x2 analog, ADAT, AES, SPDIF I/O",2x2aud,,430,,0
+asx,asx_std,aud,3xADAT I/O,ADAT,,240,,0
+asx,asx_std,aud,2xMADI I/O,MADI,,805,,0
+asx,asx_std,fw,With Firewire Interface Card,fw,,80,,1
+asx,asx_std,fw,Without Firewire Interface Card,fwno,,0,1,1
+asx,asx_std,lc,LiveControl Remote,lc,,0,1,1
+asx,asx_std,lc,Without LiveControl Remote Remote,lcno,,0,,0
+asx,asx_std,fc,AudioStation Foot Controller,fc,,90,,1
+asx,asx_std,fc,Without AudioStation Foot Controller,fcno,,0,1,1
+asx,asx_adv,cpu,Intel Core i7 quad-core,i7,,210,,1
+asx,asx_adv,cpu,Intel Core i5 quad-core,i5,,0,1,1
+asx,asx_adv,cpu,Intel Core i3 quad-core,i3,,0,,0
+asx,asx_adv,ram,32GB (4x8GB) RAM,32gb,,150,,1
+asx,asx_adv,ram,16GB (2x8GB) RAM,16gb,,50,,1
+asx,asx_adv,ram,8GB (1x8GB) RAM,8gb,,0,1,1
+asx,asx_adv,hdd,512GB Hard Disk(*),512hdd,512GB,0,,0
+asx,asx_adv,hdd,1TB Hard Disk(*),1hdd,1TB,0,1,1
+asx,asx_adv,hdd,2TB Hard Disk(*),2hdd,2TB,40,,1
+asx,asx_adv,hdd,256GB Solid State disk(*),256ssd,256GB,60,,1
+asx,asx_adv,hdd,512GB Solid State disk(*),512ssd,512GB,130,,1
+asx,asx_adv,hdd,1TB Solid State disk(*),1ssd,1TB,260,,1
+asx,asx_adv,hdd,2TB Solid State disk(*),2ssd,2TB,580,,1
+asx,asx_adv,aud,4x4 analog I/O, SPDIF Out,4x4aud,0,0,,0
+asx,asx_adv,aud,8x8 analog I/O,8x8aud,,370,,0
+asx,asx_adv,aud,"2x2 analog, ADAT, AES, SPDIF I/O",2x2aud,,430,,0
+asx,asx_adv,aud,3xADAT I/O,ADAT,,240,,0
+asx,asx_adv,aud,2xMADI I/O,MADI,,805,,0
+asx,asx_adv,fw,With Firewire Interface Card,fw,,80,,1
+asx,asx_adv,fw,Without Firewire Interface Card,fwno,,0,1,1
+asx,asx_adv,lc,LiveControl Remote,lc,,0,1,1
+asx,asx_adv,lc,Without LiveControl Remote Remote,lcno,,0,,0
+asx,asx_adv,fc,AudioStation Foot Controller,fc,,90,,1
+asx,asx_adv,fc,Without AudioStation Foot Controller,fcno,,0,1,1
+asx,asx_adv,hdb,512GB Hard Disk(*),512hddb,512GB,0,,0
+asx,asx_adv,hdb,1TB Hard Disk(*),1hddb,1TB,0,,1
+asx,asx_adv,hdb,2TB Hard Disk(*),2hddb,2TB,40,,0
+asx,asx_adv,hdb,256GB Solid State disk(*),256ssdb,256GB,60,,0
+asx,asx_adv,hdb,512GB Solid State disk(*),512ssdb,512GB,130,,0
+asx,asx_adv,hdb,1TB Solid State disk(*),1ssdb,1TB,260,,1
+asx,asx_adv,hdb,2TB Solid State disk(*),2ssdb,2TB,580,,0

@@ -1,0 +1,44 @@
+--- 
+layout: default 
+title: Support
+menu: support
+---
+{% include _set_lang.html %}
+
+<div class="container">
+    
+  <h2>Frequently Asked Questions - AudioStation</h2>
+  <div class="panel-group" id="accordion">
+  {% for faq in site.data.faq %}
+      {% if faq.lang == lang %}
+      <!-- {% increment item %} -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ item }}" >
+          <i class="indicator pull-left fa fa-plus-square-o"></i>
+
+            <div class="accordion-question">{{ faq.question }}</div>
+          </a>      </h4>
+      </div>
+      <div id="collapse{{ item }}" class="panel-collapse collapse">
+        <div class="panel-body">
+          {{ faq.answer }}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+    function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('fa-plus-square-o fa-minus-square-o');
+}
+$('#accordion').on('hidden.bs.collapse', toggleChevron);
+$('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>

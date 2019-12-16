@@ -1,0 +1,9 @@
+id_gruppo,col,title
+cpu,l,Choose your CPU
+ram,r,Choose your RAM
+hdd,l,Choose your Disk
+hdb,r,Which backup?
+aud,r,Audio System
+fw,l,FireWire 400
+lc,l,LiveControl Remote Controller
+fc,l,AudioStation Foot Controller

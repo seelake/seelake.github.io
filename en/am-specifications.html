@@ -1,0 +1,30 @@
+---
+layout: asm 
+title: AudioStation Specs  
+section: specifications 
+---
+{% include _set_lang.html %}
+
+    {% include as-{{ page.section }}/{{ lang }}/toc.html %}
+
+
+
+<a name="progettointegrato" id="progettointegrato"></a>
+<section>
+  {% include as-{{ page.section }}/{{ lang }}/progettointegrato.html product = "asm" %}
+</section>
+
+<a name="caratteristiche" id="caratteristiche"></a>
+<section class="section-gradient">
+  {% include as-{{ page.section }}/{{ lang }}/caratteristiche.html product = "asm" %}
+</section>
+
+<a name="specifichetecniche" id="specifichetecniche"></a>
+  <section class="section-gradient">
+  {% include as-{{ page.section }}/{{ lang }}/specifichetecniche.html product = "asm" %}
+  </section>
+
+<a name="coseincluso"></a>
+<section class="section-gradient">
+  {% include as-{{ page.section }}/{{ lang }}/coseincluso.html product = "asm" %}
+</section>

@@ -1,0 +1,140 @@
+.flexslider {
+  border: 0;
+  margin: 0;
+}
+
+/*
+Per evitare che i pulsanti prev/next escano dalla viewport
+provocando la comparsa della barra di scorrimento orizzontale
+ */
+.flexslider .flex-direction-nav a.flex-prev,
+.flexslider:hover .flex-direction-nav .flex-prev {
+    left: 0;
+}
+.flexslider .flex-direction-nav a.flex-next,
+.flexslider:hover .flex-direction-nav .flex-next {
+    right: 0;
+}
+
+/* Per mostrare sempre i pulsanti */
+/*.flexslider .flex-direction-nav a,
+.flexslider .flex-direction-nav a {
+	display: block;
+	opacity: 1;
+}*/
+
+/* cambiamo le frecce */
+.flex-direction-nav a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: none;
+    /*background-color: rgba(255,255,255,0.1);*/
+    border-radius: 50%;
+    border: none;
+    /*border: 1px solid #B20000;*/
+    text-align: center;
+}
+
+.flex-direction-nav a:before {
+    font-family: "flexslider-icon";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f001';
+    color: #B20000;
+    line-height: 40px;
+}
+.flex-direction-nav .flex-next {
+    right: -50px;
+}
+.flex-direction-nav .flex-next,
+.flex-direction-nav .flex-prev {
+    text-align: center;
+}
+
+
+.flexslider li .meta {
+	font-family: 'Square721 Ex BT'; 
+	font-weight: normal; 
+	font-style: normal;
+	
+	position: absolute;
+	width: 300px;
+	padding: 10px;
+  	left: 50%;
+  	margin-left: -150px;
+  
+	border-radius: 4px;
+	background-color: rgba(239, 237, 237, 0.9);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	opacity: 0;
+}
+
+
+.flex-direction-nav a.small-screen-orient {
+	border: none;
+}
+
+@media only screen and (max-device-width: 1000px) {
+  	.flex-direction-nav a {
+  		border: none;
+  	}
+}
+
+.flexslider li.flex-active-slide .meta {
+	-webkit-animation: slideAndFade 3.5s linear 1.6s 1 normal;
+	animation: slideAndFade 3.5s linear 1.6s 1 normal;
+}
+
+@-webkit-keyframes slideAndFade {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	10% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}	
+}
+@keyframes slideAndFade {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
+	}
+	10% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}	
+}

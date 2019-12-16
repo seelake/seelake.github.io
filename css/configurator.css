@@ -1,0 +1,294 @@
+.wizard {
+    margin: 0 auto;
+    background: #fff;
+}
+
+.wizard .nav-tabs {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 0;
+    border-bottom-color: #e0e0e0;
+}
+
+.wizard > div.wizard-inner {
+    position: relative;
+}
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a,
+.wizard .nav-tabs > li.active > a:hover,
+.wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+span.round-tab i {
+    color: #555555;
+}
+
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #18aeed;
+}
+
+.wizard li.active span.round-tab i {
+    color: #18aeed;
+}
+
+.wizard li.disabled span.round-tab i {
+    color: #e0e0e0;
+}
+
+/*span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}*/
+
+.wizard .nav-tabs > li {
+    width: 20%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #18aeed;
+    transition: 0.8s ease-in-out;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #18aeed;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.wizard .nav-tabs > li a:hover {
+    background: transparent;
+}
+
+.wizard .tab-pane {
+    position: relative;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+@media( max-width: 585px) {
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+
+.page-header.text-center {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.col-sm-6 {
+    padding-top: 30px !important;
+}
+
+@media only screen and (min-width: 769px) {
+    .row > [class*="col-"],
+    .row > [class^="col-"] {
+        padding-left: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wizard {
+        width: 100%;
+    }
+}
+
+
+.table,
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border: none !important;
+}
+
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.panel-product {
+    border-radius: 10px;
+    background-color: #F4F0F0;
+    /*margin: 0 auto;*/
+    border: none;
+    padding: 6px 20px 12px 12px;
+    /*float: left;*/
+    text-align: center;
+}
+
+.panel-product .row {
+    padding-bottom: 0;
+}
+
+.panel-product h3,
+.panel-product .h3 {
+    margin-top: 0;
+}
+
+.configurator .btn .row {
+    padding: 0;
+}
+
+.configurator .btn {
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.configurator button:active {
+    background-color: #a4a0a0;
+}
+
+.configurator button:disabled, .configurator .btn.disabled {
+    color: #ccc !important;
+}
+
+.configurator button.default-selected {
+    background-color: #eae6e6;
+}
+
+.configurator .btn .col-sm-6 {
+    padding: 0;
+}
+
+.configurator .h5 {
+    margin: 20px 0 0 10px;
+}
+
+.configurator .product-text{
+    font-size: 0.9em;
+}
+
+.configurator .product-text .text-right {
+    padding-right: 15px !important;
+}
+
+.price-tag {
+    color: #666;
+}
+
+h1,
+.h1 {
+    color: #999;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #18AEED;
+    border-color: #18AEED;
+}
+
+.btn-fixed-width {
+    width: 7em;
+    height: 2em;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.products-section .col-sm-6 {
+    padding-bottom: 0;
+    padding-top: 8px;
+}
+
+.row {
+    padding-bottom: 0;
+}
+
+.row [class*="col-"] .h5 {
+    margin-top: 0;
+}
+div.radio {
+    padding-top: 0 !important;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .row {
+        padding-right: 0;
+        padding-left: 0 !important;
+        margin: 0 auto;
+    }
+
+    .h1, h1 {
+        font-size: 28px;
+    }
+}

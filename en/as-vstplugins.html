@@ -1,0 +1,64 @@
+--- 
+layout: asx 
+title: AudioStation VST plugins  
+section: vstplugins 
+---
+{% include _set_lang.html %}
+
+<div class="container">
+    <div id="toc" class="panel panel-default col-md-6 col-md-offset-6">
+        <div class="panel-heading">Table of contents:</div>
+        <ul>
+            <li> <a href="#compatibilitavsttotale">Total VST compatibility!</a></li>
+            <li> <a href="#alcuniplugintestati">Some of main plugins tested</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<a class="anchor" name="compatibilitavsttotale"></a>
+<section>
+  <div class="container">
+    <div class="row no-background">
+        <h2>Total VST compatibility!</h2>
+        <p>AudioStation has been tested with thousands of freeware and commercial VST plugins. Tests results confirmed the real compatibility with every 64-bit VST plugin running on Windows 7. Due to the integration of a 32-bit to 64-bit bridge, the 32-bit plugins can be also used, including older versions running on Windows XP.</p>
+        <div class="col-md-6">
+            <h3>Plugin installation</h3>
+            <p>Unlike other similar devices, AudioStation doesn't require special versions of plugins. Plugins get installed with the normal procedures expected from developers, with no need for tricky operations and/or to compile specific support files. </p>
+        </div>
+        <div class="col-md-6">
+            <h3>Copy protection</h3> To ensure using any VST plugins, beyond the full VST protocol compatibility, AudioStation supports any copy protection system: iLok, eLicenser (formerly SyncroSoft), Challenge-Response and Serial Number. </div>
+    </div>
+  </div>
+</div>
+
+
+<a name="alcuniplugintestati" class="anchor" id="alcuniplugintestati"></a>
+<section class="section-gradient">
+  <div class="container">
+    <div class="row" id="elenco-plugin">
+        <h2>Some of main tested plugins</h2>
+        <p>This is a partial listing of main plugins gone under testing, that of course doesn't exclude the compatibility with any other plugin tested and/or not mentioned. Like said, AudioStation is compatible with any VST plugin!</p>
+        
+
+        {% for brand in site.data.plugins %}
+        
+        <h4>
+            <a href="{{ brand.url }}" target="_blank"> {{ brand.name }} </a>
+        </h4>
+        <ul>
+            {% for plugin in brand.items %}
+            <li>{{ plugin }}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+  </div>
+<div class="container">
+    <div class="row small">
+        <p>
+            <a name="notatestplugin"></a>NOTE: During the tests in some rare plugins have been found that don't interely adhere to VST protocol specifications and/or with defects. We always recommend to deeply test your plugins before using them live.</p>
+        <p>No plugins were harmed during these tests.</p>
+    </div>
+</div>
+</section>

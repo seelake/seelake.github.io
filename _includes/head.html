@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+<title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+<meta name="description" content="{{ site.description }}">
+<meta name="keywords" content="hardware VST host, live vst, digital mixer, multitrack recorder, multitrack player, patchbay, studio outboard, sound expander, pa" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico" />
+<link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" >
+  
+<!-- BOOTSTRAP -->
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+<link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+
+<!-- Cookies -->
+<!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" /> -->
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/cookieconsent.min.css" />
+
+<!-- FontAwesome -->
+<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+<link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!-- ROboto -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet"> -->
+<link href="{{ site.baseurl }}/css/fonts.css" rel="stylesheet">
+
+<!--lightbox video -->
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/lightcase.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css"> -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/flexslider.min.css">
+
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/seelake.css">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/flexslider.css">
+
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+ <script src="{{ site.baseurl }}/scripts/jquery.min.js"></script>
+
+
+<style>
+	.price_tag {
+		padding-top: 7px;
+	}
+
+{% assign menu = "products" %}
+
+{% if page.menu != nil %}
+{% assign menu =page.menu %}
+{% endif %}
+
+	#mainnav .navbar-nav > li > a#{{ menu }} {
+    	color: #b20000 !important;
+	}
+
+</style>

@@ -1,0 +1,28 @@
+{% capture gallery_path %}images/media/thumb/media_{{ include.product }}_{% endcapture %}
+
+<div class="container">
+
+{% if include.product == "asx" %}
+
+  <div class="row">
+      <h2>AudioStation X64 hi-res pictures</h2>
+  </div>
+
+
+{% elsif include.product == "asm" %}
+  <div class="row">
+      <h2>AudioStation MiNi hi-res pictures</h2>
+  </div>
+
+{% endif %}
+
+  <div class="row">
+    {% for image in site.static_files %}
+      {% if image.path contains gallery_path  %}
+        <a href="{{ site.baseurl }}{{ image.path | replace: "thumb", "large" }}" data-rel="lightcase">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.basename }}" width="280" height="118" />
+        </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+</div>

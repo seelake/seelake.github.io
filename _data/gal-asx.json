@@ -1,0 +1,74 @@
+[
+	{
+		"id": 1,
+		"caption": "",
+		"caption-class": "meta hidden",
+		"lang": "en"
+	},
+	{
+		"id": 2,
+		"caption": "2U rack-mountable steel enclosure",
+		"caption-class": "meta text-center caption-bt-l",
+		"lang": "en"
+	},
+	{
+		"id": 3,
+		"caption": "Equipped with Audio and MIDI system",
+		"caption-class": "meta text-center caption-bt-l",
+		"lang": "en"
+	},
+	{
+		"id": 4,
+		"caption": "It can be set up with display, keyboard and mouse, or via  Wi-Fi with an iPad",
+		"lang": "en",
+        "caption-class": "meta text-center caption-mid-tp-l"
+	},
+	{
+		"id": 5,
+		"caption": " Live Control allows remote control on the stage",
+		"caption-class": "meta text-center caption-mid-tp-r",
+		"lang": "en"
+	},
+	{
+		"id": 6,
+		"caption": "On the stage it can         be also controlled         via Wi-Fi with an iPad",
+		"caption-class": "meta text-center caption-mid-tp-l",	
+		"lang": "en"
+	},
+	{
+		"id": 7,
+		"caption": "You can also play with iPad/iPhone ,        via MIDI over         Wi-Fi         Network",
+		"caption-class": "meta text-center caption-mid-tp-l",
+		"lang": "en"
+	},
+	{
+		"id": 8,
+		"caption": "Foot Controller accessory to connect up to 4 footswitches",
+		"caption-class": "meta text-center caption-bt-l",
+		"lang": "en"
+	},
+	{
+		"id": 9,
+		"caption": "Includes: Live Control remote control with 5m cable,        2U rack mounting",
+		"caption-class": "meta text-center caption-bt-l",
+		"lang": "en"
+	},
+	{
+		"id": 10,
+		"caption": "AudioStation' powerful VST host/mixer",
+		"caption-class": "meta text-center caption-bt-l",
+		"lang": "en"
+	},
+	{
+		"id": 11,
+		"caption": "Running the AudioStation VST host    /    Running a DAW software",
+		"caption-class": "meta text-center",
+		"lang": "en"
+	},
+	{
+		"id": 12,
+		"caption": "Powered with Jack Audio         Connection Kit to run         multiple applications",
+		"caption-class": "meta text-center caption-bt-l",
+		"lang": "en"
+	}
+]

@@ -1,0 +1,459 @@
+--- 
+layout: default 
+title: Buy 
+lang: it 
+---
+
+<style scoped>
+    @import url('{{ site.baseurl }}/css/configurator.css')
+</style>
+
+<div class="row no-background">
+    <section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-thumbs-up"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-wrench"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-info-sign"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-list-alt"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-send"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mainform">
+                <div class="tab-content">
+
+
+
+
+
+
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <div class="h1 text-center">Scegli il tuo prodotto</div>
+                        <div class="btns-group products-section">
+                            <div class="row no-background ">
+                                <div class="col-sm-6">
+                                    <div class="panel-product">
+                                        <h3 class="product-text"><a href="am-overview.html">AudioStation MiNi<br> Configurazione Standard </a></h3>
+                    CPU i3 dual-core, 8GB RAM, 256GB SSD, Ambiente di Manutenzione versione standard, Wi-Fi e
+                    Bluetooth integrati, 2 antenne ad alta efficienza.
+                                        <br class="hidden-xs">&nbsp;
+                                        <br class="visible-sm hidden-xs">&nbsp;
+                                        <h5 class="price-tag"> € {{ site.price-asm_std-eur }}.00 (IVA esclusa)</h5>
+                                        <div class="row text-center no-background">
+                                            <button class="btn btn-primary btn-fixed-width btn-buy btn-product" value="{{ site.price-asm_std-eur }}" data-text="{{ site.text-asm_std }}">Acquista</button>
+                                            <button class="btn btn-primary btn-fixed-width btn-config  btn-product" value="{{ site.price-asm_std-eur }}" data-text="{{ site.text-asm_std }}" id="asm_std">Personalizza</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="panel-product">
+                                        <h3 class="product-text"><a href="am-overview.html">AudioStation MiNi<br> Configurazione Avanzata</a></h3>
+                    CPU i5 quad-core, 8GB RAM, 2x256GB SSD (main unit +
+                    backup unit), Ambiente di Manutenzione versione avanzata con clonazione degli HDD e sincronizzazione dei setup fra gli HDD, Wi-Fi e
+                    Bluetooth integrati, 2 antenne ad alta efficienza.
+                                        <h5 class="price-tag"> € {{ site.price-asm_adv-eur }}.00 (IVA esclusa)</h5>
+                                        <div class="row text-center no-background">
+                                            <button class="btn btn-primary btn-fixed-width btn-buy btn-product" value="{{ site.price-asm_adv-eur }}" data-text="{{ site.text-asm_adv }}">Acquista</button>
+                                            <button class="btn btn-primary btn-fixed-width btn-config btn-product" value="{{ site.price-asm_adv-eur }}" data-text="{{ site.text-asm_adv }}" id="asm_adv">Personalizza</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                            <!-- row -->
+                            <div class="row no-background">
+                                <div class="col-sm-6">
+                                    <div class="panel-product">
+                                        <h3 class="product-text"><a href="as-overview.html">AudioStation X64<br> Configurazione Standard </a></h3>
+                    CPU i5 quad-core, 8GB RAM, 1TB HDD, Ambiente di Manutenzione versione standard, remote controller
+                    LiveControl con cavo di 5m, adattatore Wi-Fi.
+                                        <br class="hidden-xs">&nbsp;
+                                        <br class="visible-sm hidden-xs">&nbsp;
+                                        <h5 class="price-tag"> € {{ site.price-asx_std-eur }}.00 (IVA esclusa)</h5>
+                                        <div class="row text-center no-background">
+                                            <button class="btn btn-primary btn-fixed-width btn-buy btn-product" value="{{ site.price-asx_std-eur }}" data-text="{{ site.text-asx_std }}">Acquista</button>
+                                            <button class="btn btn-primary btn-fixed-width btn-config btn-product" value="{{ site.price-asx_std-eur }}" data-text="{{ site.text-asx_std }}" id="asx_std">Personalizza</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="panel-product">
+                                        <h3 class="product-text">
+                                            <a href="as-overview.html">AudioStation X64<br> Configurazione Avanzata</a></h3>
+                    CPU i5 quad-core, 8GB RAM, 2x1TB HDD (unità principale + unità backup), Ambiente di Manutenzione versione avanzata con clonazione degli HDD e sincronizzazione dei setup fra gli HDD, remote controller LiveControl con cavo di 5m, adattatore WiFi.
+                    <h5 class="price-tag"> € {{ site.price-asx_adv-eur }},00 (IVA esclusa)</h5>
+                                        <div class="row text-center no-background">
+                                            <button class="btn btn-primary btn-fixed-width btn-buy btn-product" value="{{ site.price-asx_adv-eur }}" data-text="{{ site.text-asx_adv }}">Acquista</button>
+                                            <button class="btn btn-primary btn-fixed-width btn-config btn-product" value="{{ site.price-asx_adv-eur }}" data-text="{{ site.text-asx_adv }}" id="asx_adv">Personalizza</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                            <!-- row -->
+                            <div class="row no-background">
+                                <div class="col-sm-6">
+                                    <div class="panel-product">
+                                        <h3 class="product-text">LiveControl<br> Remote Controller</h3>Remote controller per AudioStation X64 (fornito di serie con il prodotto) e AudioStation Mini (opzionale). Include un cavo di connessione di 5 metri.
+                                        <h5 class="price-tag"> € {{ site.price-lc-eur }}.00 (IVA esclusa)</h5>
+                                        <div class="row text-center no-background">
+                                            <button class="btn btn-primary btn-fixed-width btn-buy btn-product" value="{{ site.price-lc-eur }}" data-text="{{site.text-lc}}">Acquista</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="panel-product">
+                                        <h3 class="product-text" data-text="site.text-fc">AudioStation<br> Foot Controller</h3>Aggiunge ad AudioStation X64 e AudioStation MiNi fino a 4 footswitch singoli o 2 footswitch doppi.
+                    Include un cavo di connessione di 5 metri.
+                                        <h5 class="price-tag"> € {{ site.price-fc-eur }}.00 (IVA esclusa)</h5>
+                                        <div class="row text-center no-background">
+                                            <button class="btn btn-primary btn-fixed-width btn-buy btn-product" value="{{ site.price-fc-eur }}" data-text="{{site.text-fc}}">Acquista</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- col -->
+                            </div>
+                            <!-- row -->
+                            <div class="row no-background"><p>&nbsp;</p></div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <div class="h1 text-center">Configura il tuo prodotto</div>
+
+                        {% for prod in site.data.prodotti %}
+                        <div id="config_{{ prod.id_prod }}" class="configurator {{ prod.class }} {{ prod.id_prod }}" >
+                            <div class="h2 text-primary text-center">{{ prod.title }}</div>
+                                
+                            
+                            <div class="row no-background">
+                                
+                                {% for group in site.data.gruppi %}
+                                <div class="col-sm-6">
+                                    <div class="h5 text-primary">{{ group.title }}</div>
+                                    <div class="btn-group {{ group.id_gruppo }}" data-toggle="buttons">
+                                    {% for item in site.data.opzioni %}
+                                        {% if item.id_prod == prod.id_prod and item.id_gruppo == group.id_gruppo %}
+                                        <label class="btn btn-default {% if item.is_default == "1" %} active {% endif %} {% if item.is_enabled == "0" %} disabled {% endif %}">
+                                            <input type="radio" name="{{ item.id_gruppo }}" value="{{ item.price }}" data-size="{{ item.class }}" data-text="{{ item.text }}" autocomplete="off" {% if item.is_default == "1" %} checked {% endif %}>
+                                            <div class="row no-background product-text" >
+                                                <div class="col-xs-6 text-left">{{ item.text }}&nbsp;&nbsp;</div>
+                                                <div class="col-xs-6 text-right"><span style="color:white;">&nbsp;</span>{% if item.price != "0" %} {{ item.price }}.00 (IVA escl.){% endif %}</div>
+                                            </div>
+                                        </label>
+                                        {% endif %} 
+                                    {% endfor %}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+
+                        </div>
+                        {% endfor %}
+
+                        <!-- FOOTER -->
+                        <div class="row no-background product-text">
+                            <div class="col-sm-6 text-center">
+                                <h3>
+                                        Price: € <span id="total_holder"></span> (IVA escl.)
+                                        <!-- <button class="btn btn-warning" id="compute">
+                                            <span class="glyphicon glyphicon-refresh"></span>Refresh
+                                        </button> -->
+                                    </h3>
+                                <div class="h4">Shipping not included;
+                                    <br class="visible-sm">delivers: 7-15 days</div>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <p class="visible-sm hidden-xs">&nbsp;</p>
+                                <input type="hidden" name="body" id="ebody">
+                                <!-- <button class="btn btn-primary btn-lg btn-buy text-center" data-toggle="modal" data-target="#beforeBuyModal">BUY</button> -->
+                                <ul class="list-inline">
+                                    <li>
+                                        <button type="button" class="btn btn-default prev-step">Precedente</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn btn-primary btn-fixed-width text-center next-step" id="form_submit">BUY</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h1 class="text-center">Leggere prima di procedere</h1>
+                        <p>Cliccando sul pulsante PROCEDI ti verranno richieste informazioni di spedizione, fatturazione e modalità di pagamento; in base a queste verrà compilata automaticamente una email con le caratteristiche del prodotto scelto e con i tuoi dati: potrai inviarcela direttamente affinchè ti possiamo comunicare il costo totale, comprensivo delle spese di trasporto ed eventuali sconti se previsti.</p>
+       <!-- <p>Se non hai un client email configurato di default </p> -->
+       <h5 class="text-primary">PREZZI</h5>
+       <p>I prezzi non comprendono IVA le spese di spedizione.</p>
+<h5 class="text-primary">IVA</h5>
+<p>L’IVA non viene applicata per acquisti effettuati da paesi extra Unione Europea. In questi casi, al momento della consegna potrebbero essere applicate tasse e/o oneri doganali in base alle leggi locali.<br>
+Per acquisti effettuati in Europa, in base alle normative fiscali relative all’IVA in vigore nei Paesi UE, per i prodotti classificati come servizi, l’IVA è del 22% poiché viene applicata l’aliquota del paese in cui Seelake fornisce tali prodotti, ossia l’Italia.<br>
+Nel caso di acquisti effettuati da soggetti dotati di partita IVA (aziende, professionisti, entri pubblici ecc.) l’IVA non verrà applicata in fattura e dovrà essere versata/conpensata nel paese dell’acquirente.</p>
+<h5 class="text-primary">SPEDIZIONE</h5>
+<p>Le spese di spedizione verranno aggiunte in base alle dimensioni e al peso del prodotto scelto e all’indicizzo di consegna. </p>
+<h5 class="text-primary">PAGAMENTI</h5>
+<p>Il pagamento può essere effettuato mediate bonifico bancario o Paypal.<BR> <strong>Nota bene</strong>: a causa delle commissioni applicate da Paypal, se si sceglie questo metodo di pagamento il prezzo finale potrà subire un aumento (fino al 3.5%), che verrà comunicato nella email di conferma, la quale conterrà anche le indicazioni per l’esecuzione del pagamento.</p>
+<p>I prezzi comprendono il compenso per copia privata e il contributo per il riciclo, se applicabili.</p>
+
+<h5 class="text-primary">SPAZIO DISCO</h5>
+<p>1GB = 1 miliardo di byte. La capacità effttiva del supporto formattato è inferiore.</p>
+                        <ul class="list-inline pull-right">
+                            <li>
+                                <button type="button" class="btn btn-default prev-step">Precedente</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-info-full next-step">Successivo</button>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="tab-pane form-shipping" role="tabpanel" id="step4">
+                        <h1 class="text-center">Il materiale verrà spedito a:</h1>
+                        <div class="form-group row no-background">
+                            <label for="shipping_company" class="col-sm-3 control-label">Ragione sociale</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_company" placeholder="Ragione sociale">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_name" class="col-sm-3 control-label">Nome</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_name" placeholder="Nome">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_surname" class="col-sm-3 control-label">Cognome</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_surname" placeholder="Cognome">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_company" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_address" class="col-sm-3 control-label">Indirizzo di destinazione</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_address" placeholder="Indirizzo">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_zip" class="col-sm-3 control-label">CAP di destinazione</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_zip" placeholder="CAP">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_city" class="col-sm-3 control-label">Località di destinazione</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_city" placeholder="Località">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_country" class="col-sm-3 control-label">Stato di destinazione</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_country" placeholder="Stato o nazione">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="shipping_phone" class="col-sm-3 control-label">Telefono (con prefisso internazionale)</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="shipping_phone" placeholder="Telefono">
+                            </div>
+                        </div>
+                        
+                        
+                        <h1>Informazioni di fatturazione:</h1>
+                        <button class="btn btn-primary copy-from-shipping">Usa le stesse della spedizione</button>
+                         <p>&nbsp;</p>
+
+
+                        <div class="form-group row no-background">
+                            <label for="billing_company" class="col-sm-3 control-label">Ragione sociale</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_company" placeholder="Ragione sociale">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_name" class="col-sm-3 control-label">Nominativo di riferimento</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_reference" placeholder="Nominativo">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_email" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_address" class="col-sm-3 control-label">Indirizzo di fatturazione</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_address" placeholder="Indirizzo">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_zip" class="col-sm-3 control-label">CAP</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_zip" placeholder="CAP">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_city" class="col-sm-3 control-label">Località</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_city" placeholder="Località">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_country" class="col-sm-3 control-label">Stato o nazione</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_country" placeholder="Stato">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="vat" class="col-sm-3 control-label">IVA (solo per EU)</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_vat" placeholder="IVA (es.: IT04708020238)">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <label for="billing_phone" class="col-sm-3 control-label">Telefono (con prefisso internazionale)</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="billing_phone" placeholder="Telefono">
+                            </div>
+                        </div>
+                        <div class="form-group row no-background">
+                            <h4>Modalità di pagamento:</h4>
+                            <div class="radio col-sm-6">
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" value="Bank transfer">Bonifico bancario</label>
+                            </div>
+                            <div class="radio col-sm-6">
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" value="Paypal">Paypal</label>
+                            </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li>
+                                <button type="button" class="btn btn-default prev-step">Precedente</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary next-step btn-shipping">Successivo</button>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h1 class="text-center">Riassunto</h1>
+                        <div id="emailTextContent"></div>
+                        <p>&nbsp;</p>
+                    <ul class="list-inline pull-right">
+                        <li>
+                            <button type="button" class="btn btn-default prev-step">Precedente</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary btn-info-full launch-email">Lancia email</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary btn-info-full copy-email-text">Copia testo</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+    </section>
+    </div>
+    
+<script>
+    var text_copied_ok = "Testo copiato! Per favore, incollalo in una nuova email e invialo a ";
+    var text_free_email = "Gentile Team Seelake\n\n\
+Vorrei ordinare i seguenti prodotti e vi chiedo una quotazione inclusiva delle spese di spedizione.\n\
+_items_text_\n\
+\n\
+Destinazione di spedizione:\n\
+Azienda: _shipping_company_\n\
+Nome: _shipping_name_\n\
+Cognome: _shipping_surname_\n\
+Email: _shipping_email_\n\
+Indirizzo: _shipping_address_\n\
+CAP: _shipping_zip_\n\
+Località: _shipping_city_\n\
+Stato: _shipping_country_\n\
+Telefono: _shipping_phone_\n\
+\n\
+Estremi di fatturazione:\n\
+Ragione Sociale: _billing_company_\n\
+Nominativo di riferimento: _billing_reference_\n\
+Email: _billing_email_\n\
+Indirizzo: _billing_address_\n\
+CAP: _billing_zip_\n\
+Località: _billing_city_\n\
+Stato: _billing_country_\n\
+Partita IVA: _billing_vat_\n\
+telefono: _billing_phone_\n\
+\n\
+Modalità di pagamento: _payment_mode_\n\
+\n\
+Cordiali saluti\n\
+"
+</script>
+
+{% include configurator.js.html %}
+    

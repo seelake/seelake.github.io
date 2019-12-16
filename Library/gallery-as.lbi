@@ -1,0 +1,40 @@
+<!--<script src="../scripts/jquery.animation.easing.js"></script>-->
+<div id="gallery" class="preloader">
+    	<div id="slideshow">
+   			<a class="anchor" id="gallery-prodotto"></a>
+         <ul>
+            <li><img alt="" src="../bullets/gal-1.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-2.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-3.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-4.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-5.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-6.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-7.jpg" /></li>
+            <li><img alt="" src="../bullets/gal-8.jpg" /></li>
+    	</ul>
+      </div>
+   <div id="inline-list">
+    <ul>
+        <li > <a id="gal-thumb-1" onClick="Scrollery(0);">Overview</a></li>
+        <li > <a id="gal-thumb-2" onClick="Scrollery(1);">Front view</a></li>
+        <li > <a id="gal-thumb-3" onClick="Scrollery(2);">B-side</a></li>
+        <li > <a id="gal-thumb-4" onClick="Scrollery(3);">Silhouette</a></li>
+        <li > <a id="gal-thumb-5" onClick="Scrollery(4);">Rack-mounting ears</a></li>
+        <li > <a id="gal-thumb-6" onClick="Scrollery(5);">Live control</a></li>
+        <li > <a id="gal-thumb-7" onClick="Scrollery(6);">VST-Host Mixer</a></li>
+        <li > <a id="gal-thumb-8" onClick="Scrollery(7);">Ottava immagine</a></li>
+  </ul> 
+ </div>
+ <div class="clearfloat"></div>
+ <!--end #gallery-->
+</div>
+<script type="text/javascript">
+var img = new Image();
+
+$(img).load(function () {
+	$("#slideshow").hide();
+	$("#gallery").removeClass("preloader");
+	$("#slideshow").addClass("slideshow-background");
+	$("#slideshow").fadeIn();
+}).attr("src", "../bullets/gal-full.jpg" );
+</script> 

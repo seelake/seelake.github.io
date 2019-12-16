@@ -1,0 +1,419 @@
+[{
+        "name": "4Front",
+        "url": "http://www.opensound.com/",
+        "items": [
+            "TruePianos"
+        ]
+    }, {
+        "name": "Antares",
+        "url": "http://www.antarestech.com/",
+        "items": [
+            "AutoTune",
+            "AVOX Bundle",
+            "Harmony Engine"
+        ]
+    }, {
+        "name": "Applied Acoustics Systems",
+        "url": "http://www.applied-acoustics.com/",
+        "items": [
+            "Lounge Lizard 3",
+            "Strum Acoustic GS-1",
+            "Strum Electric",
+            "String Studio",
+            "Tassman 4",
+            "Ultra Analog"
+        ]
+    }, {
+        "name": "Arturia",
+        "url": "http://www.arturia.com/",
+        "items": [
+            "Analog Factory",
+            "ARP2600 V",
+            "Brass",
+            "CS-80V",
+            "Jupiter-8V",
+            "Minimoog V",
+            "Moog Modular V",
+            "Prophet V"
+        ]
+    }, {
+        "name": "BBE Sound",
+        "url": "http://www.bbesound.com/",
+        "items": [
+            "Sonic Sweet",
+            "Stomp Ware"
+        ]
+    }, {
+        "name": "discoDSP",
+        "url": "http://www.discodsp.com/",
+        "items": [
+            "Discovery",
+            "Vertigo",
+            "HighLife",
+            "Corona",
+            "Phantom"
+        ]
+    }, {
+        "name": "Eiosis",
+        "url": "http://www.eiosis.com/",
+        "items": [
+            "E²Transienter",
+            "E²Deesser",
+            "AirEQ® 5.1",
+            "ELS Vocoder®",
+            "AirEQ®"
+        ]
+    }, {
+        "name": "FXpansion",
+        "url": "http://www.fxpansion.com/",
+        "items": [
+            "BFD2",
+            "BFD Eco",
+            "DCAM",
+            "Geist"
+        ]
+    }, {
+        "name": "GForce",
+        "url": "http://www.gforcesoftware.com/",
+        "items": [
+            "impOSCar",
+            "Minimonsta",
+            "M-Tron",
+            "M-Tron Pro",
+            "Oddity",
+            "String Machine"
+        ]
+    }, {
+        "name": "Green Oak Software",
+        "url": "http://www.greenoak.com/crystal/",
+        "items": [
+            "Crystal"
+        ]
+    }, {
+        "name": "IK Multimedia",
+        "url": "http://www.ikmultimedia.com/",
+        "items": [
+            "Ampeg SVX",
+            "AmpliTube 3",
+            "AmpliTube Jimi Hendrix",
+            "AmpliTube Fender",
+            "AmpliTube Metal",
+            "AmpliTube XGear",
+            "Classic Studio Revedb",
+            "Miroslav Philharmonik",
+            "SampleMoog",
+            "SampleTank 2.5",
+            "SampleTron",
+            "Sonik Synth 2",
+            "TRacks 3"
+        ]
+    }, {
+        "name": "KORG",
+        "url": "http://www.korg.com/",
+        "items": [
+            "LegacyCell",
+            "M1",
+            "MDE-X",
+            "MonoPoly",
+            "MS-20",
+            "Polysix",
+            "Wavestation"
+        ]
+    }, {
+        "name": "Lennar Digital",
+        "url": "http://www.lennardigital.com/",
+        "items": [
+            "Sylenth 1"
+        ]
+    }, {
+        "name": "Leslie Sanford",
+        "url": "http://www.lesliesanford.com/vst/",
+        "items": [
+            "Arpeggiator",
+            "LFO",
+            "Forte",
+            "Cobalt"
+        ]
+    }
+
+    , {
+        "name": "LinPlug",
+        "url": "http://www.linplug.com/",
+        "items": [
+            "Albino 3",
+            "Alpha",
+            "CronoX3",
+            "Element P",
+            "MorphoX",
+            "Octopus",
+            "Organ3",
+            "RMV",
+            "SaxLab2",
+            "Sophistry"
+        ]
+    }, {
+        "name": "M-Audio",
+        "url": "http://www.m-audio.com/",
+        "items": [
+            "Key Rig"
+        ]
+    }, {
+        "name": "Modartt",
+        "url": "http://www.pianoteq.com/",
+        "items": [
+            "Pianoteq"
+        ]
+    }, {
+        "name": "Native Instruments",
+        "url": "http://www.native-instruments.com/",
+        "items": [
+            "Abbey Road 60s Drums",
+            "Absynth 5",
+            "Acoustic Refractions",
+            "Akoustik Piano",
+            "B4 II",
+            "Battery 3",
+            "Berlin Concert Grand",
+            "Elektrik Piano 1.5",
+            "FM8",
+            "Guitar Rig 4 Pro",
+            "Kontakt 4",
+            "Massive",
+            "New York Concert Grand",
+            "Pro-53",
+            "Rammfire",
+            "Razor",
+            "Reaktor 5",
+            "Reaktor Prism",
+            "Reaktor Spark",
+            "Reflektor",
+            "Scarabee MM-Bass",
+            "Scarbee A-200",
+            "Scarbee Clavinet/Pianet",
+            "Scarbee Mark I",
+            "The Finger",
+            "Traktor's 12",
+            "Upright Piano",
+            "Vienna Concert Grand",
+            "Vintage Organs"
+        ]
+    }, {
+        "name": "Nomad Factory",
+        "url": "http://www.nomadfactory.com/",
+        "items": [
+            "Analog Mastering Tools",
+            "Analog Signature Pack",
+            "British Bundle",
+            "Blue Tubes Bundle",
+            "Blue Tubes Dynamics Pack",
+            "Blue Tubes Effects Pack",
+            "Blue Tubes Equalizers Pac",
+            "Essential Studio Suite",
+            "Liquid Bundle II",
+            "Motown Retro Bundle",
+            "Rock Amp Legends"
+        ]
+    }, {
+        "name": "Novation",
+        "url": "http://www.novationmusic.com/",
+        "items": [
+            "Bass Station",
+            "Novation FX Suite",
+            "V-Station"
+        ]
+    }, {
+        "name": "OhmForce",
+        "url": "http://www.ohmforce.com/",
+        "items": [
+            "Frohmage",
+            "Hematohm",
+            "Mobilohm",
+            "OhmBoyz",
+            "Ohmicide:Melohman",
+            "Ohmygod",
+            "Predatohm",
+            "Quad Frohmage",
+            "Symptohm:Melohman"
+        ]
+    }, {
+        "name": "Overloud",
+        "url": "http://www.overloud.com/",
+        "items": [
+            "Breverb",
+            "Mark Studio 1",
+            "SpringAge",
+            "Th2 Triode",
+            "TH2",
+            "VKFX"
+        ]
+    }, {
+        "name": "PSPaudioware",
+        "url": "http://www.pspaudioware.com/",
+        "items": [
+            "Lexicon PSP42",
+            "PSP 608 MultiDelay",
+            "PSP 85",
+            "PSP ClassicQ",
+            "PSP ClassicQex",
+            "PSP ConsoleQ",
+            "PSP EasyVerb",
+            "PSP MasterComp",
+            "PSP MasterQ",
+            "PSP McQ",
+            "PSP MicroComp",
+            "PSP MicroWarmer",
+            "PSP MixGate2",
+            "PSP MixPressor2",
+            "PSP MixSaturator2",
+            "PSP MixSync2",
+            "PSP MixTreble2",
+            "PSP MxiBass2",
+            "PSP N2O",
+            "PSP Neon HR",
+            "PSP oldTimer ME",
+            "PSP PianoVerb",
+            "PSP PreQursor",
+            "PSP PseudoStereo",
+            "PSP RetroQ",
+            "PSP Stereo",
+            "PSP StereoAnalyser",
+            "PSP StereoEnhancer",
+            "PSP VintageWarmer2",
+            "PSP Xenon",
+            "PSP Vintage Meter"
+        ]
+    }, {
+        "name": "Rob Papen",
+        "url": "http://www.robpapen.com/",
+        "items": [
+            "Blue",
+            "Predator",
+            "Punch",
+            "RG",
+            "RP-Delay",
+            "RP-Verb",
+            "SubBoomBass"
+        ]
+    }, {
+        "name": "SonicProjects",
+        "url": "http://www.sonicprojects.ch/",
+        "items": [
+            "OP-X",
+            "OP-X Pro",
+            "OP-X Pro II",
+            "Stringer"
+        ]
+    }, {
+        "name": "Spectrasonics",
+        "url": "http://www.spectrasonics.net",
+        "items": [
+            "Omnisphere",
+            "Stylus RMX",
+            "Trilian"
+        ]
+    }, {
+        "name": "Steinberg",
+        "url": "http://www.steinberg.net",
+        "items": [
+            "Groove Agent 3",
+            "Halion 4",
+            "Halion Symphonic Orchestra",
+            "Halion Sonic",
+            "RND Portico Plugins"
+        ]
+    }, {
+        "name": "Superwave",
+        "url": "http://www.superwavesynths.co.uk/",
+        "items": [
+            "Ultimate",
+            "Tarkus",
+            "P80",
+            "Performer",
+            "Professional",
+            "Trance-Pro",
+            "D909",
+            "D808",
+            "Tiny Pops",
+            "P8",
+            "Stylophone"
+        ]
+    }, {
+        "name": "Synthogy",
+        "url": "http://www.synthogy.com/",
+        "items": [
+            "Ivory 2 Grand Pianos",
+            "Ivory 2 Italian Grand",
+            "Ivory 2 Upright Pianos"
+        ]
+    }, {
+        "name": "Togu Audio Line",
+        "url": "http://kunz.corrupt.ch/",
+        "items": [
+            "TAL-BassLine",
+            "TAL-Elek7ro-II",
+            "TAL-U-No-62",
+            "TAL-Vocoder",
+            "TAL-NoiseMaker ",
+            "TAL-Reverb",
+            "TAL-Filter",
+            "TAL-Chorus-60",
+            "TAL-Tube",
+            "TAL-Bitcrusher",
+            "TAL-Flanger",
+            "TAL-USE"
+        ]
+    }, {
+        "name": "Toontrack",
+        "url": "http://www.toontrack.com/",
+        "items": [
+            "Beatstation",
+            "EZdrummer",
+            "EZmix",
+            "EZplayer",
+            "Superior Drummer 2"
+        ]
+    }, {
+        "name": "UltimateSoundBank",
+        "url": "http://www.ultimatesoundbank.com/",
+        "items": [
+            "Acoustic Toy Museum",
+            "Beat Box Anthology",
+            "Electric Toy Museum",
+            "Jazzistic",
+            "Mayhem of Loops",
+            "Percussion Store",
+            "PlugsoundPro",
+            "Retro Keyboards",
+            "Retro Organs",
+            "Synths Anthology",
+            "UVI Workstation",
+            "World Traditions",
+            "X-Treme FX"
+        ]
+    }, {
+        "name": "Waves",
+        "url": "http://www.waves.com/",
+        "items": [
+            "Gold Bundles",
+            "GTR3",
+            "JJP Analog Legends",
+            "Mercury Bundles",
+            "Silver Bundles",
+            "SSL 4000 Collection",
+            "Studio Classics Collection",
+            "The API Collection"
+        ]
+    }, {
+        "name": "Way Out Ware",
+        "url": "http://www.wayoutware.com",
+        "items": [
+            "TimewARP 2600"
+        ]
+    }, {
+        "name": "XLN Audio",
+        "url": "http://www.xlnaudio.com/",
+        "items": [
+            "Addictive Drums"
+        ]
+    }
+]
