@@ -37,6 +37,7 @@ exclude:
   - Library
   - asset
   - bower_components
+  - [vendor]
 
 include: ['en', 'it' ]
 # permalink: /:path/ # se uncommentato permette di avere  /as-overview/index.html 
