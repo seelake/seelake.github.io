@@ -41,7 +41,7 @@ exclude:
 
 include: ['en', 'it' ]
 # permalink: /:path/ # se uncommentato permette di avere  /as-overview/index.html 
-#                     # anzichè /as-overview.html
+#                     # anzich� /as-overview.html
 
 ### PREZZI PRODOTTI
 
