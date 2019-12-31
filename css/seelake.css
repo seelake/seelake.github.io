@@ -48,7 +48,7 @@ a#back-to-top {
     padding-bottom: 10px;
 }
 
-.faq {}
+/* .faq {} */
 
 .container {
     max-width: 994px; /*porta larghezza netta del contenuto a 948*/
@@ -645,9 +645,9 @@ blockquote .signature:after {
 }
 
 
-#artists_container .readmoreless.collapsed::after {
+/* #artists_container .readmoreless.collapsed::after {
     
-}
+} */
 
 /*#artists_container .readmoreless::after {
         content: ' less';
