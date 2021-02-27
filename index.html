@@ -11,10 +11,10 @@
 // default = en (.com, .eu...), se la lingua del browser è it-it
 var theUrl = location.href;
 var theLang = 'en';
-var language = window.navigator.userLanguage || window.navigator.language;	//works IE/SAFARI/CHROME/FF
+// var language = window.navigator.userLanguage || window.navigator.language;	//works IE/SAFARI/CHROME/FF
 
-if(language.toLowerCase().indexOf('it') > -1 ) 
-			theLang = 'it';
+// if(language.toLowerCase().indexOf('it') > -1 ) 
+// 			theLang = 'it';
 
 window.location= theLang +"/allproducts.html";
 
