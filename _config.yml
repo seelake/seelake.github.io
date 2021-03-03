@@ -50,8 +50,8 @@ price-asx_std-eur: 2399
 price-asx_adv-eur: 2549
 price-asm_std-eur: 1169
 price-asm_adv-eur: 1259
-price-lc-eur: 225
-price-fc-eur: 90
+price-lc-eur: 224
+price-fc-eur: 89
 
 #### TESTI PRODOTTI
 text-asx_std: AudioStation X64 Standard Configuration
