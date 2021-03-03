@@ -14,7 +14,7 @@ window.cookieconsent.initialise({
     }
   },
   "content": {
-    "message": "COOKIES FREE! This website does NOT use cookies: we care about your privacy."
+    "message": "This website needs to store functional cookies only, on your device: we care about your privacy."
   }
 })});
 
