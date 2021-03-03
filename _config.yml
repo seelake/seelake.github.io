@@ -39,9 +39,10 @@ exclude:
   - bower_components
 exclude: [vendor]
 
-include: ['en', 'it' ]
+# include: ['en', 'it' ]
+include: ['en' ]
 # permalink: /:path/ # se uncommentato permette di avere  /as-overview/index.html 
-#                     # anzich� /as-overview.html
+#                     # anziche /as-overview.html
 
 ### PREZZI PRODOTTI
 
