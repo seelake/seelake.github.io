@@ -46,10 +46,10 @@ include: ['en' ]
 
 ### PREZZI PRODOTTI
 
-price-asx_std-eur: 2350
-price-asx_adv-eur: 2550
-price-asm_std-eur: 1270
-price-asm_adv-eur: 1390
+price-asx_std-eur: 2399
+price-asx_adv-eur: 2549
+price-asm_std-eur: 1169
+price-asm_adv-eur: 1259
 price-lc-eur: 225
 price-fc-eur: 90
 
