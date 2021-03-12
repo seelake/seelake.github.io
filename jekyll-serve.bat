@@ -1,0 +1,1 @@
+docker run --rm  --volume="C:\Users\raffaele.turra\OneDrive\projects\seelake\seelake.github.io:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll  jekyll serve
