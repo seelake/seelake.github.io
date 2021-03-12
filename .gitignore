@@ -8,4 +8,8 @@
 ehthumbs.db
 Thumbs.db
 
-_site
+# Jekyll-specific ignores #
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
