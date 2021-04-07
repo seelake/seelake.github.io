@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
 telephone: +39 0424 503717
 fax: +39 0424 506828
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.seelake.com" # the base hostname & protocol for your site, e.g. http://example.com
 unsubscribe_link: "mailto:info@seelake.it?subject=unsubscribe&body=Unsubscribe"
 # twitter_username: jekyllrb
 # github_username:  jekyll
