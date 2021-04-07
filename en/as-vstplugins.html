@@ -10,7 +10,7 @@ section: vstplugins
         <div class="panel-heading">Table of contents:</div>
         <ul>
             <li> <a href="#compatibilitavsttotale">Total VST compatibility!</a></li>
-            <li> <a href="#alcuniplugintestati">Some of main plugins tested</a></li>
+            <li> <a href="#alcuniplugintestati">Some tested plugins</a></li>
         </ul>
     </div>
 </div>
@@ -38,30 +38,30 @@ section: vstplugins
 
 <a name="alcuniplugintestati" class="anchor" id="alcuniplugintestati"></a>
 <section class="section-gradient">
-  <div class="container">
-    <div class="row" id="elenco-plugin">
-        <h2>Some of main tested plugins</h2>
-        <p>This is a partial listing of main plugins gone under testing, that of course doesn't exclude the compatibility with any other plugin tested and/or not mentioned. Like said, AudioStation is compatible with any VST plugin!</p>
-        
+    <div class="container">
+        <div class="row" id="elenco-plugin">
+            <h2>Some tested plugins</h2>
+            <p>This is a partial listing of main plugins been tested, which doesn't exclude the compatibility with any other plugin tested and/or not mentioned. Like already said, AudioStation is compatible with any VST plugin!</p>
+            
 
-        {% for brand in site.data.plugins %}
-        
-        <h4>
-            <a href="{{ brand.url }}" target="_blank"> {{ brand.name }} </a>
-        </h4>
-        <ul>
-            {% for plugin in brand.items %}
-            <li>{{ plugin }}</li>
+            {% for brand in site.data.plugins %}
+            
+            <h4>
+                <a href="{{ brand.url }}" target="_blank"> {{ brand.name }} </a>
+            </h4>
+            <ul>
+                {% for plugin in brand.items %}
+                <li>{{ plugin }}</li>
+                {% endfor %}
+            </ul>
             {% endfor %}
-        </ul>
-        {% endfor %}
+        </div>
     </div>
-  </div>
-<div class="container">
-    <div class="row small">
-        <p>
-            <a name="notatestplugin"></a>NOTE: During the tests in some rare plugins have been found that don't interely adhere to VST protocol specifications and/or with defects. We always recommend to deeply test your plugins before using them live.</p>
-        <p>No plugins were harmed during these tests.</p>
+    <div class="container">
+        <div class="row small">
+            <p>
+                <a name="notatestplugin"></a>NOTE: During the tests in some rare plugins have been found that don't interely adhere to VST protocol specifications and/or with defects. We always recommend to deeply test your plugins before using them live.</p>
+            <p>No plugins were harmed during these tests.</p>
+        </div>
     </div>
-</div>
 </section>
