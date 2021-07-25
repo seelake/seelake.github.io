@@ -1,0 +1,5 @@
+id_prod,title,price,class
+asm_std,AudioStation MiNi Standard Configuration equipped with:,1234,as-standard
+asm_adv,AudioStation MiNi Advanced Configuration equipped with:,1329,as-advanced
+asx_std,AudioStation X64 Standard Configuration equipped with:,2529,as-standard
+asx_adv,AudioStation X64 Advanced Configuration equipped with:,2689,as-advanced
