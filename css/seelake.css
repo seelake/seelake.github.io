@@ -657,5 +657,9 @@ blockquote .signature:after {
     display: none;
 }
 
+/* Mi serve per posizionare il banner es. Black Friday */
+#overlay-container {
+    display: none;
+}
 
 
