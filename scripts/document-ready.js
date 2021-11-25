@@ -17,28 +17,22 @@ window.addEventListener("load", function () {
             "message": "This website needs to store functional cookies only, on your device: we care about your privacy."
         }
     })
-
-    if($.cookie('banner') == undefined) {
-        $.cookie('banner') = 'visible';
-        $('#overlay-banner').trigger("click");
-    }
 });
 
 //"message": "COOKIES FREE! This website does NOT use cookies to ensure you get the best experience on our website. To manage cookies preferences, please use your browser settings."
 
 
-(function ($) {
-    $(document).ready(function () {
-
-        // $('#overlay-banner.overlay').hide().
+jQuery(function () {
 
         $('a[data-rel^=lightcase]').lightcase();
+
+        $('#overlay-banner').trigger("click");
 
         // lasciamo spazio per il footer sticky
         $('body').css('margin-bottom', $('footer').outerHeight());
 
         // Scroll to top
-        $(window).scroll(function () {
+        $(window).on('scroll', function () {
             if ($(this).scrollTop() > 50) {
                 $('#back-to-top').fadeIn();
             } else {
@@ -46,7 +40,7 @@ window.addEventListener("load", function () {
             }
         });
         // scroll body to 0px on click
-        $('#back-to-top').click(function () {
+        $('#back-to-top').on('click', function () {
             $('#back-to-top').tooltip('hide');
             $('body,html').animate({
                 scrollTop: 0
@@ -129,7 +123,6 @@ window.addEventListener("load", function () {
 
         if ($('#contactfooter'))
             $('#contactfooter').attr("href", 'mail' + 'to:' + user1 + '@' + domain1 + '.' + 'it');
-    })
-})(jQuery)
+})
 
 
