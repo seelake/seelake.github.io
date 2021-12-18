@@ -26,15 +26,18 @@ jQuery(function () {
 
         $('a[data-rel^=lightcase]').lightcase();
 
-        // visualizziamo il banner overlay solo se il cookie non è definito
-        // il cookie scade dopo 2 giorni
-        if(Cookies.get('banner') === 'undefined' || Cookies.get('banner') != '1' ) {
+        // // visualizziamo il banner overlay solo se il cookie non è definito
+        // // il cookie scade dopo 2 giorni
+        // if(Cookies.get('banner') === 'undefined' || Cookies.get('banner') != '1' ) {
             
-            Cookies.set('banner', '1', { expires: 2 });
+        //     var minutes = 15 * 60 * 1000 
+        //     var expirationTime = new Date(new Date().getTime() + minutes);
+        //     Cookies.set('banner', '1', { expires: expirationTime });
 
-            $('#overlay-banner').trigger("click");
+        //     // $('#overlay-banner').trigger("click");
+        //     Fancybox.show([{src:"#overlay-container", type:"inline" }]);
 
-        }
+        // }
 
         // lasciamo spazio per il footer sticky
         $('body').css('margin-bottom', $('footer').outerHeight());
