@@ -658,8 +658,8 @@ blockquote .signature:after {
 }
 
 /* Mi serve per posizionare il banner es. Black Friday */
-#overlay-container {
-    display: none;
+#overlay-container:focus, #overlay-container > *:focus {
+    outline: none;
 }
 
 
