@@ -1,0 +1,4 @@
+RedirectMatch ^/$ https://www.seelake.com/en/allproducts.html
+
+RewriteEngine on
+RewriteRule ^/?it/(.*)$ /en/$1 [R,L]
