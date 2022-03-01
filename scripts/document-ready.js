@@ -14,12 +14,10 @@ window.addEventListener("load", function () {
             }
         },
         "content": {
-            "message": "This website needs to store functional cookies only, on your device: we care about your privacy."
+            "message": msgCookieConsent
         }
     })
 });
-
-//"message": "COOKIES FREE! This website does NOT use cookies to ensure you get the best experience on our website. To manage cookies preferences, please use your browser settings."
 
 
 jQuery(function () {

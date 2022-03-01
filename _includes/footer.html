@@ -55,6 +55,12 @@
 
 <!-- cookies law -->
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script> -->
+<script>
+var userLanguage = window.navigator.userLanguage || window.navigator.language;
+var labelGoBtn = userLanguage.startsWith("it") ? "Accetto" : "Got it";
+var msgCookieConsent = userLanguage.startsWith("it") ? "Questo sito utilizza solo cookie tecnici: ci teniamo alla tua privacy." : "This website needs to store functional cookies only, on your device: we care about your privacy.";
+var textLearnMore = userLanguage.startsWith("it") ? "Approfondisci" : "Learn more";
+</script>
 <script src="{{ site.baseurl }}/scripts/cookieconsent.min.js"></script>
 
 <!-- Cookie nuova versione -->
